@@ -1,0 +1,42 @@
+<resources>
+    <string name="TOKEN">pk.eyJ1IjoiZGVpdmkxNzI4IiwiYSI6ImNrOGc5YnlqNjBjY3oza3AyZHkxMG1hMmkifQ.xEpRAjROK3-ATnvCZlyU2Q</string>
+    <string name="app_name">Gass.App</string>
+    <string name="img_Logo">Logo</string>
+    <string name="txt_Correo">Correo electronico</string>
+    <string name="txt_Pass">Contraseña</string>
+    <string name="btn_Iniciar">Iniciar sesión</string>
+    <string name="tv_Register">Si no tienes una cuenta</string>
+    <string name="tv_Registrar">Registrate aquí</string>
+    <string name="tv_Registrate">Registrate</string>
+    <string name="txt_Nombres">Nombres</string>
+    <string name="txt_Apellidos">Apellidos</string>
+    <string name="txt_PassConfirm">Confirmar contraseña</string>
+    <string name="txt_Tel">Teléfono</string>
+    <string name="btn_Registrarme">Registrarme</string>
+    <string name="tv_Volver">Volver</string>
+    <string name="Item_perfil">Perfil</string>
+    <string name="Item_config">Configuración</string>
+    <string name="Item_logout">Cerrar sesión</string>
+    <string name="drawerOpen">draweOpen</string>
+    <string name="drawerClose">drawerClose</string>
+    <string name="Item_tarjetas">Mis tarjetas</string>
+    <string name="Item_historial">Historial de compra</string>
+    <string name="Item_terminos">Terminos y condiciones</string>
+    <string name="Item_about">Acerga de Gass.App</string>
+    <string name="Ac_agregarT">Agregar tarjeta</string>
+    <string name="todo">TODO</string>
+    <string name="numberCard">**** **** **** 1234</string>
+    <string name="tv_Titular">Titular:</string>
+    <string name="tv_Fecha">Vence: 00/00</string>
+    <string name="Edt_Titular">Nombre titular</string>
+    <string name="Edt_NumberCard">Número de la tarjeta</string>
+    <string name="Edt_Fecha">Fecha vencimiento</string>
+    <string name="Edt_Calve">Clave</string>
+    <string name="Btn_Escanear">Escanear tarjeta</string>
+    <string name="Btn_Agregar">Agreagr</string>
+    <string name="Edt_Mes">Mes</string>
+    <string name="Edt_year">año</string>
+    <string name="title_activity_map">MapActivity</string>
+
+
+</resources>

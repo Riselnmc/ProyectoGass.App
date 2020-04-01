@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/perfil"
+        android:icon="@drawable/profile"
+        android:title="@string/Item_perfil"/>
+    <item
+        android:id="@+id/tarjetas"
+        android:icon="@drawable/card"
+        android:title="@string/Item_tarjetas"/>
+    <item
+        android:id="@+id/historial"
+        android:icon="@drawable/historial"
+        android:title="@string/Item_historial"/>
+    <item
+        android:id="@+id/terminos"
+        android:icon="@drawable/terminos"
+        android:title="@string/Item_terminos"/>
+    <item
+        android:id="@+id/about"
+        android:icon="@drawable/acerca"
+        android:title="@string/Item_about"/>
+
+</menu>
