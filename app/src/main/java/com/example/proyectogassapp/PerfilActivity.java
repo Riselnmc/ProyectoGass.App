@@ -15,7 +15,7 @@ public class PerfilActivity extends AppCompatActivity {
         findViewById(R.id.Imgvolver).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent atras = new Intent(PerfilActivity.this, MapActivity.class);
+                Intent atras = new Intent(PerfilActivity.this, MapaActivity.class);
                 startActivity(atras);
                 finish();
             }

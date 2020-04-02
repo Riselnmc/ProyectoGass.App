@@ -1,4 +1,4 @@
-#Wed Apr 01 15:30:39 COT 2020
-base.0=C\:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\dex\\debug\\out\\classes.dex
+#Thu Apr 02 14:36:49 COT 2020
+base.0=C\:\\Users\\rinam\\Desktop\\ProyectoGass.App\\app\\build\\intermediates\\dex\\debug\\out\\classes.dex
 path.0=classes.dex
 renamed.0=classes.dex

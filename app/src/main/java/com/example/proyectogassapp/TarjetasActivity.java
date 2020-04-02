@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
@@ -25,13 +26,14 @@ public class TarjetasActivity extends AppCompatActivity {
     ArrayList<Tarjetas>listTarjetas;
     TextView tvTarjeta, tvTitular,tvFechaV;
 
+    @SuppressLint("SetTextI18n")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tarjetas);
         db = new ConexionDB(this);
         findViewById(R.id.Imgvolver).setOnClickListener(v -> {
-            Intent atras = new Intent(TarjetasActivity.this, MapActivity.class);
+            Intent atras = new Intent(TarjetasActivity.this, MapaActivity.class);
             startActivity(atras);
             finish();
         });

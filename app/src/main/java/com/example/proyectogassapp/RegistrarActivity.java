@@ -214,11 +214,11 @@ public class RegistrarActivity extends AppCompatActivity {
 
         SQLiteDatabase sqLiteDatabase = db.getWritableDatabase();
         ContentValues registros = new ContentValues();
-        registros.put(Utilidades.CAMPO_NOMBRES,nombres.getText().toString());
-        registros.put(Utilidades.CAMPO_APELLIDOS,apellidos.getText().toString());
-        registros.put(Utilidades.CAMPO_CORREO,correo.getText().toString());
-        registros.put(Utilidades.CAMPO_CLAVE,passw.getText().toString());
-        registros.put(Utilidades.CAMPO_TELEFONO,tele.getText().toString());
+        registros.put(Utilidades.CAMPO_NOMBRES,nombres.getText().toString().trim());
+        registros.put(Utilidades.CAMPO_APELLIDOS,apellidos.getText().toString().trim());
+        registros.put(Utilidades.CAMPO_CORREO,correo.getText().toString().trim());
+        registros.put(Utilidades.CAMPO_CLAVE,passw.getText().toString().trim());
+        registros.put(Utilidades.CAMPO_TELEFONO,tele.getText().toString().trim());
 
         long res = sqLiteDatabase.insert(Utilidades.TABLA_USUARIO,null,registros);
         sqLiteDatabase.close();

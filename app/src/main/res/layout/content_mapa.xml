@@ -2,6 +2,7 @@
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:mapbox="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
@@ -9,25 +10,11 @@
     tools:showIn="@layout/activity_mapa"
     app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
-    <fragment
-        android:id="@+id/map"
-        android:name='com.google.android.gms.maps.SupportMapFragment'
+    <com.mapbox.mapboxsdk.maps.MapView
+        android:id="@+id/mapView"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
-
-    <com.mancj.materialsearchbar.MaterialSearchBar
-        android:id="@+id/buscador"
-        style="@style/MaterialSearchBarLight"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:mt_speechMode="false"
-        app:mt_hint="Buscar estación"
-        app:mt_maxSuggestionsCount="10"
-        app:mt_placeholder="Buscar estación"
-        app:mt_navIconEnabled="true"
-        android:layout_margin="15dp"
-        android:elevation="5dp"
-        android:outlineProvider="bounds"/>
+        android:layout_height="match_parent"
+        mapbox:mapbox_cameraZoom="17" />
 
     <com.skyfishjy.library.RippleBackground
         android:layout_width="match_parent"
@@ -42,24 +29,45 @@
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_centerInParent="true"
             android:src="@drawable/ic_location"
-            android:translationY="-15dp"/>
+            android:layout_centerInParent="true"
+            android:translationY="-20dp"/>
 
     </com.skyfishjy.library.RippleBackground>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="20dp"
+        android:src="@drawable/ic_menu"
+        app:backgroundTint="@color/colorWhite"
+        app:maxImageSize="28dp" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_location_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="20dp"
+        app:maxImageSize="28dp"
+        app:backgroundTint="@color/colorWhite"
+        android:src="@drawable/ic_magnifying_glass"/>
 
     <Button
         android:id="@+id/find"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
         android:text="Encontrar estaciones"
-        android:textColor="#fff"
-        android:textSize="18sp"
-        android:background="#2196F3"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:layout_marginBottom="25dp"
-        android:textStyle="bold"/>
+        android:textColor="@color/colorWhite"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="30dp"
+        android:textSize="20sp"
+        android:background="#2196F3"/>
 
 </RelativeLayout>

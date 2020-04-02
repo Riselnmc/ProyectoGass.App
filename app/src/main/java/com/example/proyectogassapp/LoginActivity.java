@@ -52,42 +52,8 @@ public class LoginActivity extends AppCompatActivity {
 
             if (!correoU.isEmpty() && !contraU.isEmpty()){
                 if (validarUsuario(correoU,contraU)){
-                    Dexter.withActivity(LoginActivity.this)
-                            .withPermission(Manifest.permission.ACCESS_FINE_LOCATION)
-                            .withListener(new PermissionListener() {
-                                @Override
-                                public void onPermissionGranted(PermissionGrantedResponse response) {
-                                    startActivity(new Intent(LoginActivity.this, MapActivity.class));
-                                    finish();
-                                }
-
-                                @Override
-                                public void onPermissionDenied(PermissionDeniedResponse response) {
-                                    if (response.isPermanentlyDenied()){
-                                        AlertDialog.Builder builder = new AlertDialog.Builder(LoginActivity.this);
-                                        builder.setTitle("Permiso denegado")
-                                                .setMessage("Permiso denegado")
-                                                .setNegativeButton("Cancel",null)
-                                                .setPositiveButton("Aceptar", new DialogInterface.OnClickListener() {
-                                                    @Override
-                                                    public void onClick(DialogInterface dialog, int which) {
-                                                        Intent intent = new Intent();
-                                                        intent.setAction(Settings.ACTION_APPLICATION_DETAILS_SETTINGS);
-                                                        intent.setData(Uri.fromParts("package", getPackageName(),null));
-                                                    }
-                                                })
-                                                .show();
-                                    }else {
-                                        Toast.makeText(LoginActivity.this, "Permisos denegados", Toast.LENGTH_SHORT).show();
-                                    }
-                                }
-
-                                @Override
-                                public void onPermissionRationaleShouldBeShown(PermissionRequest permission, PermissionToken token) {
-                                    token.continuePermissionRequest();
-                                }
-                            })
-                            .check();
+                    startActivity(new Intent(LoginActivity.this, MapaActivity.class));
+                    finish();
                 }else{
                     Toast.makeText(LoginActivity.this, "Usuario o contraseña incorrectos", Toast.LENGTH_SHORT).show();
                 }

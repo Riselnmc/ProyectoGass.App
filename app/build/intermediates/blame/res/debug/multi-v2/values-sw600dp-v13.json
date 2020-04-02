@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-sw600dp-v13\\values-sw600dp-v13.xml",
+            "outputFile": "C:\\Users\\rinam\\Desktop\\ProyectoGass.App\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-sw600dp-v13\\values-sw600dp-v13.xml",
             "map": [
                 {
                     "source": "C:\\Users\\rinam\\.gradle\\caches\\transforms-2\\files-2.1\\c6c160beabe7f4f404dcf7d40c9cb143\\material-1.1.0\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",

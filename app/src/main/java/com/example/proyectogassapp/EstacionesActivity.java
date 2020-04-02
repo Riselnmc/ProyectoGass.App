@@ -34,7 +34,7 @@ public class EstacionesActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_estaciones);
         findViewById(R.id.Imgvolver).setOnClickListener(v -> {
-            Intent atras = new Intent(EstacionesActivity.this, MapActivity.class);
+            Intent atras = new Intent(EstacionesActivity.this, MapaActivity.class);
             startActivity(atras);
         });
         db = new ConexionDB(this);

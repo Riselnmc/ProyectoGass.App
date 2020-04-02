@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-en-rAU\\values-en-rAU.xml",
+            "outputFile": "C:\\Users\\rinam\\Desktop\\ProyectoGass.App\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-en-rAU\\values-en-rAU.xml",
             "map": [
                 {
                     "source": "C:\\Users\\rinam\\.gradle\\caches\\transforms-2\\files-2.1\\80320c9ad43d0eaf60f4e36bc4d98035\\navigation-ui-2.2.1\\res\\values-en-rAU\\values-en-rAU.xml",
