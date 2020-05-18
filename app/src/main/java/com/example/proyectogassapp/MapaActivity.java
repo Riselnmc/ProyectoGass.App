@@ -7,14 +7,26 @@ import android.location.Location;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.MenuItem;
-import android.view.View;
-
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
+import androidx.room.Database;
 
+import com.example.proyectogassapp.entidades.Estaciones;
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.android.gms.tasks.Task;
 import com.google.android.material.navigation.NavigationView;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
+import com.google.firebase.firestore.FirebaseFirestore;
+import com.google.firebase.firestore.QueryDocumentSnapshot;
+import com.google.firebase.firestore.QuerySnapshot;
 import com.mapbox.android.core.permissions.PermissionsListener;
 import com.mapbox.android.core.permissions.PermissionsManager;
 import com.mapbox.api.geocoding.v5.models.CarmenFeature;
@@ -41,7 +53,6 @@ import com.mapbox.mapboxsdk.plugins.places.autocomplete.model.PlaceOptions;
 import com.mapbox.mapboxsdk.style.layers.SymbolLayer;
 import com.mapbox.mapboxsdk.style.sources.GeoJsonSource;
 import com.skyfishjy.library.RippleBackground;
-
 import java.util.List;
 
 import static com.mapbox.mapboxsdk.style.layers.PropertyFactory.iconImage;
@@ -58,7 +69,6 @@ public class MapaActivity extends AppCompatActivity implements OnMapReadyCallbac
     private String geojsonSourceLayerId = "geojsonSourceLayerId";
     private String symbolIconId = "symbolIconId";
     private PermissionsManager permissionsManager;
-    ConexionDB db;
     private DrawerLayout drawerLayout;
     private NavigationView navigationView;
     private Location originLocation;
@@ -67,15 +77,22 @@ public class MapaActivity extends AppCompatActivity implements OnMapReadyCallbac
     private Marker destinationMarker;
     private RippleBackground rippleBackground;
 
+    FirebaseAuth mAuth;
+    FirebaseFirestore db;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        //Clave api de mapbox
         Mapbox.getInstance(this, getString(R.string.TOKEN));
         setContentView(R.layout.activity_mapa);
+
+        mAuth = FirebaseAuth.getInstance();
+        db = FirebaseFirestore.getInstance();
+
         mapView = findViewById(R.id.mapView);
         mapView.onCreate(savedInstanceState);
         mapView.getMapAsync(this);
-        db = new ConexionDB(this);
         drawerLayout = findViewById(R.id.drawerLayout);
         navigationView = findViewById(R.id.navigationView);
         findViewById(R.id.menu).setOnClickListener(v -> {
@@ -98,26 +115,16 @@ public class MapaActivity extends AppCompatActivity implements OnMapReadyCallbac
         this.mapboxMap = mapboxMap;
         mapboxMap.addOnMapClickListener(this);
         mapboxMap.setOnMarkerClickListener(this);
-        LatLng marcador1 = new LatLng(6.345024,-75.564173);
-        mapboxMap.addMarker(new MarkerOptions().position(new LatLng(marcador1)));
 
-        LatLng marcador2 = new LatLng(6.327083824544367,-75.5606060475111);
-        mapboxMap.addMarker(new MarkerOptions().position(new LatLng(marcador2)));
+        db.collection("Estaciones").get().addOnSuccessListener(queryDocumentSnapshots -> {
+            for (QueryDocumentSnapshot snapshot : queryDocumentSnapshots){
+                Estaciones estaciones = snapshot.toObject(Estaciones.class);
+                Double Latitud = estaciones.getLatitud();
+                Double Longitud = estaciones.getLongitud();
+                mapboxMap.addMarker(new MarkerOptions().position(new LatLng(Latitud,Longitud)));
+            }
+        });
 
-        LatLng marcador3 = new LatLng(6.309283454931489, -75.55962024304738);
-        mapboxMap.addMarker(new MarkerOptions().position(new LatLng(marcador3)));
-
-        LatLng marcador4 = new LatLng(6.308696886205112, -75.55984087817768);
-        mapboxMap.addMarker(new MarkerOptions().position(new LatLng(marcador4)));
-
-        LatLng marcador5 = new LatLng(6.339463378470185, -75.54567143439789);
-        mapboxMap.addMarker(new MarkerOptions().position(new LatLng(marcador5)));
-
-        LatLng marcador6 = new LatLng(6.338639503531937, 75.54320852659262);
-        mapboxMap.addMarker(new MarkerOptions().position(new LatLng(marcador6)));
-
-        LatLng marcador7 = new LatLng(6.315068555754237, -75.55733757983401);
-        mapboxMap.addMarker(new MarkerOptions().position(new LatLng(marcador7)));
         mapboxMap.setStyle(Style.MAPBOX_STREETS, new Style.OnStyleLoaded() {
             @Override
             public void onStyleLoaded(@NonNull Style style) {
@@ -289,6 +296,11 @@ public class MapaActivity extends AppCompatActivity implements OnMapReadyCallbac
         }else if (item.getItemId() == R.id.tarjetas){
             Intent moveTarjeta = new Intent(this, TarjetasActivity.class);
             startActivity(moveTarjeta);
+        }else if (item.getItemId() == R.id.logout){
+            mAuth.signOut();
+            Intent logout = new Intent(this, LoginActivity.class);
+            startActivity(logout);
+            finish();
         }
         drawerLayout.closeDrawers();
         return true;

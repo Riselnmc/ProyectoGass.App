@@ -27,11 +27,19 @@ public class ConexionDB extends SQLiteOpenHelper {
         return valor == 1;
     }
 
+    private void RegistrarEstaciones(){
+        SQLiteDatabase db=getWritableDatabase();
+        String insert = "Insert into "+Utilidades.TABLA_ESTACIONES+" ( "+Utilidades.ID_ESTACION+","+Utilidades.NOMBRE_ESTACION+","+Utilidades.DIRECCION_ESTACION+","+Utilidades.TELEFONO_ESTACIONES+") values (1,'Esso','Buenas buenas','3054422132')";
+        db.execSQL(insert);
+        db.close();
+    }
+
     @Override
     public void onCreate(SQLiteDatabase GassApp) {
         GassApp.execSQL(Utilidades.CREAR_TABLA_USUARIO);
         GassApp.execSQL(Utilidades.CREAR_TABLA_TARJETA);
         GassApp.execSQL(Utilidades.CREAR_TABLA_ESTACION);
+        GassApp.execSQL(Utilidades.INSERTAR_ESTACIONES);
     }
 
     @Override

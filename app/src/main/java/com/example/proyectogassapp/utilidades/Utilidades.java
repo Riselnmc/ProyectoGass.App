@@ -36,4 +36,5 @@ public class Utilidades {
     //SQL TABLA ESTACIÓN
     public static final String CREAR_TABLA_ESTACION = "create table "+TABLA_ESTACIONES+ "("+ID_ESTACION+" INTEGER PRIMARY KEY, "+NOMBRE_ESTACION+" TEXT,"+ DIRECCION_ESTACION+" TEXT,"+TELEFONO_ESTACIONES+" TEXT)";
 
+    public static final String INSERTAR_ESTACIONES = "Insert into "+TABLA_ESTACIONES+" ( "+ID_ESTACION+","+NOMBRE_ESTACION+","+DIRECCION_ESTACION+","+TELEFONO_ESTACIONES+") values (1,'Esso','Buenas buenas','3054422132'),(2,'Texaco','Ven','1234567890')";
 }

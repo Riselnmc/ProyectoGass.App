@@ -13,7 +13,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".DetalleEstacionActivity"></activity>
+        <activity android:name=".EliminarCuentaActivity"></activity>
+        <activity android:name=".RestablecerClaveActivity" />
+        <activity android:name=".DetalleEstacionActivity" />
         <activity android:name=".EstacionesActivity" />
         <activity android:name=".AgregarTarjetaActivity" />
         <activity android:name=".MapaActivity" />
@@ -23,7 +25,6 @@
             android:value="AIzaSyBHidwOYGqTAucK9oZVPkALgWK0Bur1CTU" />
 
         <activity android:name=".PerfilActivity" />
-        <activity android:name=".HeaderActivity" />
         <activity android:name=".TarjetasActivity" />
         <activity android:name=".RegistrarActivity" />
         <activity android:name=".LoginActivity" />

@@ -21,5 +21,9 @@
         android:id="@+id/about"
         android:icon="@drawable/acerca"
         android:title="@string/Item_about"/>
+    <item
+        android:id="@+id/logout"
+        android:icon="@drawable/profile"
+        android:title="Cerrar sesión"/>
 
 </menu>

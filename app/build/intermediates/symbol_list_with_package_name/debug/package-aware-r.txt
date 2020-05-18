@@ -27,10 +27,6 @@ anim design_bottom_sheet_slide_in
 anim design_bottom_sheet_slide_out
 anim design_snackbar_in
 anim design_snackbar_out
-anim fade_in_left
-anim fade_in_right
-anim fade_out
-anim fade_out_left
 anim mtrl_bottom_sheet_slide_in
 anim mtrl_bottom_sheet_slide_out
 anim mtrl_card_lowers_interpolator
@@ -38,13 +34,9 @@ anim nav_default_enter_anim
 anim nav_default_exit_anim
 anim nav_default_pop_enter_anim
 anim nav_default_pop_exit_anim
-animator back_to_menu_morph
-animator back_to_menu_rotation
 animator design_appbar_state_list_animator
 animator design_fab_hide_motion_spec
 animator design_fab_show_motion_spec
-animator menu_to_back_morph
-animator menu_to_back_rotation
 animator mtrl_btn_state_list_anim
 animator mtrl_btn_unelevated_state_list_anim
 animator mtrl_card_state_list_anim
@@ -163,6 +155,7 @@ attr buttonCompat
 attr buttonGravity
 attr buttonIconDimen
 attr buttonPanelSideLayout
+attr buttonSize
 attr buttonStyle
 attr buttonStyleSmall
 attr buttonTint
@@ -204,6 +197,7 @@ attr chipStrokeColor
 attr chipStrokeWidth
 attr chipStyle
 attr chipSurfaceColor
+attr circleCrop
 attr closeIcon
 attr closeIconEnabled
 attr closeIconEndPadding
@@ -234,6 +228,7 @@ attr colorPrimary
 attr colorPrimaryDark
 attr colorPrimarySurface
 attr colorPrimaryVariant
+attr colorScheme
 attr colorSecondary
 attr colorSecondaryVariant
 attr colorSurface
@@ -392,6 +387,8 @@ attr iconStartPadding
 attr iconTint
 attr iconTintMode
 attr iconifiedByDefault
+attr imageAspectRatio
+attr imageAspectRatioAdjust
 attr imageButtonStyle
 attr indeterminateProgressStyle
 attr initialActivityCount
@@ -626,43 +623,6 @@ attr maxImageSize
 attr measureWithLargestChild
 attr menu
 attr minTouchTargetSize
-attr mt_backIconDrawable
-attr mt_backIconTint
-attr mt_backIconUseTint
-attr mt_borderlessRippleEnabled
-attr mt_clearIconDrawable
-attr mt_clearIconTint
-attr mt_clearIconUseTint
-attr mt_dividerColor
-attr mt_handlesTintEnabled
-attr mt_highlightedTextColor
-attr mt_hint
-attr mt_hintColor
-attr mt_leftTextSelectorDrawable
-attr mt_leftTextSelectorTint
-attr mt_maxSuggestionsCount
-attr mt_menuDividerEnabled
-attr mt_menuIconDrawable
-attr mt_menuIconTint
-attr mt_menuIconUseTint
-attr mt_middleTextSelectorDrawable
-attr mt_middleTextSelectorTint
-attr mt_navIconEnabled
-attr mt_navIconTint
-attr mt_navIconUseTint
-attr mt_placeholder
-attr mt_placeholderColor
-attr mt_rightTextSelectorDrawable
-attr mt_rightTextSelectorTint
-attr mt_roundedSearchBarEnabled
-attr mt_searchBarColor
-attr mt_searchIconDrawable
-attr mt_searchIconTint
-attr mt_searchIconUseTint
-attr mt_speechIconDrawable
-attr mt_speechMode
-attr mt_textColor
-attr mt_textCursorTint
 attr multiChoiceItemLayout
 attr navGraph
 attr navigationContentDescription
@@ -714,6 +674,7 @@ attr rb_type
 attr recyclerViewStyle
 attr reverseLayout
 attr rippleColor
+attr scopeUris
 attr scrimAnimationDuration
 attr scrimBackground
 attr scrimVisibleHeightTrigger
@@ -934,6 +895,17 @@ color colorPrimary
 color colorPrimaryDark
 color colorPrimaryText
 color colorWhite
+color common_google_signin_btn_text_dark
+color common_google_signin_btn_text_dark_default
+color common_google_signin_btn_text_dark_disabled
+color common_google_signin_btn_text_dark_focused
+color common_google_signin_btn_text_dark_pressed
+color common_google_signin_btn_text_light
+color common_google_signin_btn_text_light_default
+color common_google_signin_btn_text_light_disabled
+color common_google_signin_btn_text_light_focused
+color common_google_signin_btn_text_light_pressed
+color common_google_signin_btn_tint
 color design_bottom_navigation_shadow_color
 color design_box_stroke_color
 color design_dark_default_color_background
@@ -1082,31 +1054,6 @@ color primary_text_disabled_material_light
 color rippelColor
 color ripple_material_dark
 color ripple_material_light
-color searchBarBackIconTintColor
-color searchBarBackIconTintColorDark
-color searchBarClearIconTintColor
-color searchBarClearIconTintColorDark
-color searchBarCursorColor
-color searchBarDividerColor
-color searchBarDividerColorDark
-color searchBarHintColor
-color searchBarHintColorDark
-color searchBarIconColor
-color searchBarIconColorDark
-color searchBarMenuIconTintColor
-color searchBarMenuIconTintColorDark
-color searchBarNavIconTintColor
-color searchBarNavIconTintColorDark
-color searchBarPlaceholderColor
-color searchBarPlaceholderColorDark
-color searchBarPrimaryColor
-color searchBarPrimaryColorDark
-color searchBarSearchIconTintColor
-color searchBarSearchIconTintColorDark
-color searchBarTextColor
-color searchBarTextColorDark
-color searchBarTextHighlightColor
-color searchBarTextHighlightColorDark
 color secondary_text_default_material_dark
 color secondary_text_default_material_light
 color secondary_text_disabled_material_dark
@@ -1122,7 +1069,6 @@ color test_mtrl_calendar_day_selected
 color tooltip_background_dark
 color tooltip_background_light
 color transparente
-color white
 dimen abc_action_bar_content_inset_material
 dimen abc_action_bar_content_inset_with_nav
 dimen abc_action_bar_default_height_material
@@ -1213,8 +1159,6 @@ dimen compat_button_padding_vertical_material
 dimen compat_control_corner_material
 dimen compat_notification_large_icon_max_height
 dimen compat_notification_large_icon_max_width
-dimen corner_radius_default
-dimen corner_radius_rounded
 dimen default_dimension
 dimen design_appbar_elevation
 dimen design_bottom_navigation_active_item_max_width
@@ -1596,6 +1540,25 @@ drawable cio_ic_mastercard
 drawable cio_ic_paypal_monogram
 drawable cio_ic_visa
 drawable cio_paypal_logo
+drawable common_full_open_on_phone
+drawable common_google_signin_btn_icon_dark
+drawable common_google_signin_btn_icon_dark_focused
+drawable common_google_signin_btn_icon_dark_normal
+drawable common_google_signin_btn_icon_dark_normal_background
+drawable common_google_signin_btn_icon_disabled
+drawable common_google_signin_btn_icon_light
+drawable common_google_signin_btn_icon_light_focused
+drawable common_google_signin_btn_icon_light_normal
+drawable common_google_signin_btn_icon_light_normal_background
+drawable common_google_signin_btn_text_dark
+drawable common_google_signin_btn_text_dark_focused
+drawable common_google_signin_btn_text_dark_normal
+drawable common_google_signin_btn_text_dark_normal_background
+drawable common_google_signin_btn_text_disabled
+drawable common_google_signin_btn_text_light
+drawable common_google_signin_btn_text_light_focused
+drawable common_google_signin_btn_text_light_normal
+drawable common_google_signin_btn_text_light_normal_background
 drawable design_bottom_navigation_item_background
 drawable design_fab_background
 drawable design_ic_visibility
@@ -1603,31 +1566,22 @@ drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
 drawable fondo
+drawable googleg_disabled_color_18
+drawable googleg_standard_color_18
 drawable historial
-drawable ic_arrow_left_black_48dp
-drawable ic_back_animated
-drawable ic_back_vector
 drawable ic_calendar_black_24dp
 drawable ic_clear_black_24dp
-drawable ic_close_black_48dp
-drawable ic_dots_vertical_black_48dp
 drawable ic_edit_black_24dp
-drawable ic_history_black_48dp
 drawable ic_keyboard_arrow_left_black_24dp
 drawable ic_keyboard_arrow_right_black_24dp
 drawable ic_launcher_background
 drawable ic_launcher_foreground
 drawable ic_location
-drawable ic_magnify_black_48dp
 drawable ic_magnifying_glass
 drawable ic_mastercard
 drawable ic_menu
-drawable ic_menu_animated
 drawable ic_menu_arrow_down_black_24dp
 drawable ic_menu_arrow_up_black_24dp
-drawable ic_menu_black_24dp
-drawable ic_menu_vector
-drawable ic_microphone_black_48dp
 drawable ic_mtrl_checked_circle
 drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
@@ -1691,7 +1645,6 @@ drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
 drawable profile
-drawable round_corners
 drawable tarjeta
 drawable terminos
 drawable test_custom_background
@@ -1705,8 +1658,10 @@ id BOTTOM_START
 id CTRL
 id CardView
 id CodeSecurity
-id EdtBuscador
+id EliminarCuenta
+id EstacionesS
 id FUNCTION
+id FechaVencimiento
 id Imgvolver
 id META
 id Mes
@@ -1775,9 +1730,12 @@ id action_text
 id actions
 id activity_chooser_view_content
 id add
+id adjust_height
+id adjust_width
 id alertTitle
 id all
 id always
+id apellidoUsuario
 id async
 id auto
 id barrier
@@ -1818,10 +1776,11 @@ id content
 id contentPanel
 id coordinator
 id correoE
-id correoU
+id correoUsuario
 id custom
 id customPanel
 id cut
+id dark
 id date_picker_actions
 id decor_content_parent
 id default_activity_button
@@ -1839,6 +1798,8 @@ id drawerLayout
 id dropdown_menu
 id edit_query
 id edittext_search
+id emailUser
+id emailUsuario
 id end
 id end_padder
 id enterAlways
@@ -1849,7 +1810,6 @@ id expanded_menu
 id fab_location_search
 id fade
 id favoriteResultView
-id fechaVencimiento
 id fill
 id fillRipple
 id fill_horizontal
@@ -1872,30 +1832,29 @@ id home
 id homeAsUp
 id icon
 id icon_group
+id icon_only
 id ifRoom
 id image
 id imageView
 id imageView2
 id imageView3
-id imgPerfil
 id info
 id infowindow_description
 id infowindow_title
-id inputContainer
 id invisible
 id italic
 id item_touch_helper_previous_elevation
-id iv_delete
 id labeled
 id largeLabel
-id last
 id layoutToolbar
 id left
+id light
 id line1
 id line3
 id linearLayout
 id listMode
 id list_item
+id logout
 id mapView
 id map_view
 id mapbox_place_picker_toolbar_back_button
@@ -1914,16 +1873,6 @@ id month_navigation_fragment_toggle
 id month_navigation_next
 id month_navigation_previous
 id month_title
-id mt_arrow
-id mt_clear
-id mt_container
-id mt_divider
-id mt_editText
-id mt_menu
-id mt_nav
-id mt_placeholder
-id mt_recycler
-id mt_search
 id mtrl_calendar_day_selector_frame
 id mtrl_calendar_days_of_week
 id mtrl_calendar_frame
@@ -1946,12 +1895,13 @@ id mtrl_picker_text_input_range_start
 id mtrl_picker_title_text
 id multiply
 id nameEstation
+id nameUser
 id nav_controller_view_tag
 id navigationView
 id navigation_header_container
 id never
 id noScroll
-id nombresUsuario
+id nombreUsuario
 id none
 id normal
 id notification_background
@@ -1987,14 +1937,13 @@ id progress_bar_place
 id progress_circular
 id progress_horizontal
 id radio
+id recuperarClave
 id recyclerView
-id recyclerViewE
 id register
-id requestItem
+id restablecerClave
 id right
 id right_icon
 id right_side
-id root
 id root_bottom_sheet
 id root_layout
 id round
@@ -2073,7 +2022,6 @@ id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
 id textTile
-id textView
 id textView3
 id text_input_end_icon
 id text_input_start_icon
@@ -2118,6 +2066,7 @@ id user_location_button
 id view_offset_helper
 id visible
 id volver
+id wide
 id withText
 id wrap
 id wrap_content
@@ -2125,16 +2074,13 @@ integer abc_config_activityDefaultDur
 integer abc_config_activityShortDur
 integer app_bar_elevation_anim_duration
 integer bottom_sheet_slide_duration
-integer btm_to
 integer cancel_button_image_alpha
 integer config_navAnimTime
 integer config_tooltipAnimTime
 integer design_snackbar_text_max_lines
 integer design_tab_indicator_anim_duration_ms
+integer google_play_services_version
 integer hide_password_duration
-integer icon_animation_duration
-integer mtb_from
-integer mtb_to_btm_from
 integer mtrl_badge_max_character_count
 integer mtrl_btn_anim_delay_ms
 integer mtrl_btn_anim_duration_ms
@@ -2195,6 +2141,7 @@ layout activity_main
 layout activity_mapa
 layout activity_perfil
 layout activity_registrar
+layout activity_restablecer_clave
 layout activity_tarjetas
 layout content_mapa
 layout custom_dialog
@@ -2213,7 +2160,6 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
-layout item_last_request
 layout item_list_estaciones
 layout item_list_tarjetas
 layout mapbox_activity_autocomplete
@@ -2275,7 +2221,6 @@ layout notification_template_media
 layout notification_template_media_custom
 layout notification_template_part_chronometer
 layout notification_template_part_time
-layout searchbar
 layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
@@ -2343,10 +2288,8 @@ string abc_searchview_description_voice
 string abc_shareactionprovider_share_with
 string abc_shareactionprovider_share_with_application
 string abc_toolbar_collapse_description
-string action_search
 string app_name
 string appbar_scrolling_view_behavior
-string back_vector_path
 string bottom_sheet_behavior
 string btn_Iniciar
 string btn_Registrarme
@@ -2355,12 +2298,37 @@ string character_counter_overflowed_content_description
 string character_counter_pattern
 string chip_text
 string clear_text_end_icon_content_description
+string common_google_play_services_enable_button
+string common_google_play_services_enable_text
+string common_google_play_services_enable_title
+string common_google_play_services_install_button
+string common_google_play_services_install_text
+string common_google_play_services_install_title
+string common_google_play_services_notification_channel_name
+string common_google_play_services_notification_ticker
+string common_google_play_services_unknown_issue
+string common_google_play_services_unsupported_text
+string common_google_play_services_update_button
+string common_google_play_services_update_text
+string common_google_play_services_update_title
+string common_google_play_services_updating_text
+string common_google_play_services_wear_update_text
+string common_open_on_phone
+string common_signin_button_text
+string common_signin_button_text_long
+string default_web_client_id
 string drawerClose
 string drawerOpen
 string error_icon_content_description
 string exposed_dropdown_menu_content_description
 string fab_transformation_scrim_behavior
 string fab_transformation_sheet_behavior
+string firebase_database_url
+string gcm_defaultSenderId
+string google_api_key
+string google_app_id
+string google_crash_reporting_api_key
+string google_storage_bucket
 string hide_bottom_view_on_scroll_behavior
 string icon_content_description
 string img_Logo
@@ -2400,7 +2368,6 @@ string mapbox_style_traffic_night
 string mapbox_telemetryImproveMap
 string mapbox_telemetryLink
 string mapbox_telemetrySettings
-string menu_vector_path
 string mtrl_badge_numberless_content_description
 string mtrl_chip_close_icon_content_description
 string mtrl_exceed_max_badge_number_suffix
@@ -2443,6 +2410,7 @@ string path_password_eye
 string path_password_eye_mask_strike_through
 string path_password_eye_mask_visible
 string path_password_strike_through
+string project_id
 string search_menu_title
 string status_bar_notification_info_overflow
 string title_activity_map
@@ -2682,7 +2650,6 @@ style Base_Widget_MaterialComponents_TextView
 style CardView
 style CardView_Dark
 style CardView_Light
-style Dexter_Internal_Theme_Transparent
 style EmptyTheme
 style MaterialAlertDialog_MaterialComponents
 style MaterialAlertDialog_MaterialComponents_Body_Text
@@ -2694,8 +2661,6 @@ style MaterialAlertDialog_MaterialComponents_Title_Panel
 style MaterialAlertDialog_MaterialComponents_Title_Panel_CenterStacked
 style MaterialAlertDialog_MaterialComponents_Title_Text
 style MaterialAlertDialog_MaterialComponents_Title_Text_CenterStacked
-style MaterialSearchBarDark
-style MaterialSearchBarLight
 style Platform_AppCompat
 style Platform_AppCompat_Light
 style Platform_MaterialComponents
@@ -3195,6 +3160,7 @@ styleable LinearConstraintLayout android_orientation
 styleable LinearLayoutCompat android_gravity android_orientation android_baselineAligned android_baselineAlignedChildIndex android_weightSum divider dividerPadding measureWithLargestChild showDividers
 styleable LinearLayoutCompat_Layout android_layout_gravity android_layout_width android_layout_height android_layout_weight
 styleable ListPopupWindow android_dropDownHorizontalOffset android_dropDownVerticalOffset
+styleable LoadingImageView circleCrop imageAspectRatio imageAspectRatioAdjust
 styleable MaterialAlertDialog backgroundInsetBottom backgroundInsetEnd backgroundInsetStart backgroundInsetTop
 styleable MaterialAlertDialogTheme materialAlertDialogBodyTextStyle materialAlertDialogTheme materialAlertDialogTitleIconStyle materialAlertDialogTitlePanelStyle materialAlertDialogTitleTextStyle
 styleable MaterialButton android_insetLeft android_insetRight android_insetTop android_insetBottom android_checkable backgroundTint backgroundTintMode cornerRadius elevation icon iconGravity iconPadding iconSize iconTint iconTintMode rippleColor shapeAppearance shapeAppearanceOverlay strokeColor strokeWidth
@@ -3204,7 +3170,6 @@ styleable MaterialCalendarItem android_insetLeft android_insetRight android_inse
 styleable MaterialCardView android_checkable cardForegroundColor checkedIcon checkedIconTint rippleColor shapeAppearance shapeAppearanceOverlay state_dragged strokeColor strokeWidth
 styleable MaterialCheckBox buttonTint useMaterialThemeColors
 styleable MaterialRadioButton useMaterialThemeColors
-styleable MaterialSearchBar mt_backIconDrawable mt_backIconTint mt_backIconUseTint mt_borderlessRippleEnabled mt_clearIconDrawable mt_clearIconTint mt_clearIconUseTint mt_dividerColor mt_handlesTintEnabled mt_highlightedTextColor mt_hint mt_hintColor mt_leftTextSelectorDrawable mt_leftTextSelectorTint mt_maxSuggestionsCount mt_menuDividerEnabled mt_menuIconDrawable mt_menuIconTint mt_menuIconUseTint mt_middleTextSelectorDrawable mt_middleTextSelectorTint mt_navIconEnabled mt_navIconTint mt_navIconUseTint mt_placeholder mt_placeholderColor mt_rightTextSelectorDrawable mt_rightTextSelectorTint mt_roundedSearchBarEnabled mt_searchBarColor mt_searchIconDrawable mt_searchIconTint mt_searchIconUseTint mt_speechIconDrawable mt_speechMode mt_textColor mt_textCursorTint
 styleable MaterialShape shapeAppearance shapeAppearanceOverlay
 styleable MaterialTextAppearance android_lineHeight lineHeight
 styleable MaterialTextView android_textAppearance android_lineHeight lineHeight
@@ -3228,6 +3193,7 @@ styleable ScrimInsetsFrameLayout insetForeground
 styleable ScrollingViewBehavior_Layout behavior_overlapTop
 styleable SearchView android_focusable android_maxWidth android_inputType android_imeOptions closeIcon commitIcon defaultQueryHint goIcon iconifiedByDefault layout queryBackground queryHint searchHintIcon searchIcon submitBackground suggestionRowLayout voiceIcon
 styleable ShapeAppearance cornerFamily cornerFamilyBottomLeft cornerFamilyBottomRight cornerFamilyTopLeft cornerFamilyTopRight cornerSize cornerSizeBottomLeft cornerSizeBottomRight cornerSizeTopLeft cornerSizeTopRight
+styleable SignInButton buttonSize colorScheme scopeUris
 styleable Snackbar snackbarButtonStyle snackbarStyle
 styleable SnackbarLayout android_maxWidth actionTextColorAlpha animationMode backgroundOverlayColorAlpha elevation maxActionInlineWidth
 styleable Spinner android_entries android_popupBackground android_prompt android_dropDownWidth popupTheme

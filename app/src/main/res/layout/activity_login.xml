@@ -41,32 +41,35 @@
                 android:layout_marginTop="5dp"
                 android:importantForAutofill="no" />
 
+            <TextView
+                android:id="@+id/recuperarClave"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="#03A9F4"
+                android:textSize="16sp"
+                android:text="Recuperar contraseña"
+                android:layout_gravity="end" />
+
             <Button
                 android:id="@+id/btnLogin"
-                android:layout_width="209dp"
-                android:layout_height="60dp"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
                 android:background="@drawable/btn_login"
                 android:text="@string/btn_Iniciar"
                 android:textColor="#FFFFFF"
                 android:textSize="20sp"
                 android:layout_marginTop="10dp"/>
 
-            <TextView
-                android:id="@+id/textView"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/tv_Register"
-                android:textSize="19sp"
-                android:layout_marginTop="10dp"/>
-
-            <TextView
+            <Button
                 android:id="@+id/register"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/tv_Registrar"
-                android:textColor="#2196F3"
-                android:textSize="19sp"
-                android:layout_marginTop="2dp"/>
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:background="@drawable/btn_login"
+                android:textColor="#fff"
+                android:layout_marginTop="10dp"
+                android:text="CREAR CUENTA"
+                android:textSize="20sp"/>
 
         </LinearLayout>
 

@@ -4,31 +4,29 @@ import java.io.Serializable;
 
 public class Tarjetas implements Serializable {
 
-    private Integer id_T;
+    private String id_T;
     private String Titular;
     private String NumeroTarjeta;
-    private String Mes;
-    private String Year;
+    private String FechaVencimiento;
     private String Clave;
 
     public Tarjetas(){
 
     }
 
-    public Tarjetas(Integer id_T, String titular, String numeroTarjeta, String mes, String year, String clave) {
+    public Tarjetas(String id_T, String titular, String numeroTarjeta, String fechaVencimiento, String clave) {
         this.id_T = id_T;
         Titular = titular;
         NumeroTarjeta = numeroTarjeta;
-        Mes = mes;
-        Year = year;
+        FechaVencimiento = fechaVencimiento;
         Clave = clave;
     }
 
-    public Integer getId_T() {
+    public String getId_T() {
         return id_T;
     }
 
-    public void setId_T(Integer id_T) {
+    public void setId_T(String id_T) {
         this.id_T = id_T;
     }
 
@@ -48,20 +46,12 @@ public class Tarjetas implements Serializable {
         NumeroTarjeta = numeroTarjeta;
     }
 
-    public String getMes() {
-        return Mes;
+    public String getFechaVencimiento() {
+        return FechaVencimiento;
     }
 
-    public void setMes(String mes) {
-        Mes = mes;
-    }
-
-    public String getYear() {
-        return Year;
-    }
-
-    public void setYear(String year) {
-        Year = year;
+    public void setFechaVencimiento(String fechaVencimiento) {
+        FechaVencimiento = fechaVencimiento;
     }
 
     public String getClave() {

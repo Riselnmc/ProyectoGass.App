@@ -1,44 +1,48 @@
 package com.example.proyectogassapp;
 
-import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.Manifest;
-import android.content.DialogInterface;
 import android.content.Intent;
-import android.database.sqlite.SQLiteStatement;
-import android.net.Uri;
 import android.os.Bundle;
-import android.provider.Settings;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
-
-import com.example.proyectogassapp.utilidades.Utilidades;
-import com.karumi.dexter.Dexter;
-import com.karumi.dexter.PermissionToken;
-import com.karumi.dexter.listener.PermissionDeniedResponse;
-import com.karumi.dexter.listener.PermissionGrantedResponse;
-import com.karumi.dexter.listener.PermissionRequest;
-import com.karumi.dexter.listener.single.PermissionListener;
+import com.google.firebase.auth.FirebaseAuth;
 
 public class LoginActivity extends AppCompatActivity {
 
+    //Variables para los componentes de la vista
     EditText correo,pass;
-    Button btnIniciar;
-    TextView registrar;
-    ConexionDB db;
+    Button btnIniciar,registrar;
+    TextView recuperar;
+
+    //Variables para la base de datos
+    private String email = "";
+    private String password = "";
+
+    //Creación de la variable
+    FirebaseAuth mAuth;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-        db = new ConexionDB(this);
+        //Instanciar autentificador en la variable
+        mAuth = FirebaseAuth.getInstance();
+
+        //Referenciar las variables con la vista
         correo = findViewById(R.id.correoE);
         pass = findViewById(R.id.password);
         registrar = findViewById(R.id.register);
+        recuperar = findViewById(R.id.recuperarClave);
+
+        //@setOnClickListener evento para cuando el usuario presione el componente
+        recuperar.setOnClickListener(v -> {
+            Intent moveRestablecer = new Intent(LoginActivity.this, RestablecerClaveActivity.class);
+            startActivity(moveRestablecer);
+        });
 
         registrar.setOnClickListener(v -> {
             Intent moveRegistrar = new Intent(LoginActivity.this, RegistrarActivity.class);
@@ -47,30 +51,52 @@ public class LoginActivity extends AppCompatActivity {
 
         btnIniciar = findViewById(R.id.btnLogin);
         btnIniciar.setOnClickListener(v -> {
-            String correoU = correo.getText().toString();
-            String contraU = pass.getText().toString();
+            /*
+                * Darle valor a las variables
+                * @trim sirve para borrar los espacios en blanco
+                * @toLoweCase convierte el texto en minuscula
+             */
+            email = correo.getText().toString().trim().toLowerCase();
+            password = pass.getText().toString().trim();
 
-            if (!correoU.isEmpty() && !contraU.isEmpty()){
-                if (validarUsuario(correoU,contraU)){
-                    startActivity(new Intent(LoginActivity.this, MapaActivity.class));
-                    finish();
-                }else{
-                    Toast.makeText(LoginActivity.this, "Usuario o contraseña incorrectos", Toast.LENGTH_SHORT).show();
-                }
-            }else if (correoU.isEmpty()){
+            /*
+                * Condicional para verificar que los campos no esten vacios
+                * De lo contrario mostrará un error y no dejará seguir
+             */
+            if (!email.isEmpty() && !password.isEmpty()){
+
+                loginUser();
+
+            }else if (email.isEmpty()){
                 correo.setError("El correo no puede estar vacio");
-            }else if (contraU.isEmpty()){
+            }else if (password.isEmpty()){
                 pass.setError("La contraseña no puede estar vacia");
             }
 
         });
     }
 
-    public boolean validarUsuario(String correo,String clave){
-        String sql = "Select count(*) from "+Utilidades.TABLA_USUARIO+" where "+Utilidades.CAMPO_CORREO+ " ='"+correo+"' and "+Utilidades.CAMPO_CLAVE+" ='"+clave+"'";
-        SQLiteStatement statement = db.getReadableDatabase().compileStatement(sql);
-        long valor = statement.simpleQueryForLong();
-        statement.close();
-        return valor==1;
+    //Metodo para verificar si los datos del usuario se encuentran en la base de datos
+    private void loginUser(){
+        mAuth.signInWithEmailAndPassword(email, password).addOnCompleteListener(task -> {
+            if (task.isSuccessful()){
+                startActivity(new Intent(LoginActivity.this, MapaActivity.class));
+                finish();
+            }else {
+                Toast.makeText(LoginActivity.this, "Usuario o contraseña incorrectos", Toast.LENGTH_SHORT).show();
+            }
+        });
     }
+
+    //Se usa cuando el activity vuelve a iniciarse
+    @Override
+    protected void onStart() {
+        super.onStart();
+        //Condición para verificar si el usuario ya inicio sesión
+        if (mAuth.getCurrentUser() != null){
+            startActivity(new Intent(LoginActivity.this, MapaActivity.class));
+            finish();
+        }
+    }
+
 }

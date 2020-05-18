@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RestablecerClaveActivity"
+    android:padding="20dp">
+
+    <EditText
+        android:id="@+id/emailUsuario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/txt_Correo"
+        android:autofillHints=""
+        android:inputType="textPersonName"/>
+
+        <Button
+            android:id="@+id/restablecerClave"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Restablecer contraseña"
+            android:background="@color/login"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:layout_alignParentBottom="true"/>
+
+
+</RelativeLayout>

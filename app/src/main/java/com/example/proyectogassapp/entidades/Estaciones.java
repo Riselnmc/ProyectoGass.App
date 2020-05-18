@@ -4,27 +4,47 @@ import java.io.Serializable;
 
 public class Estaciones implements Serializable {
 
-    private int id_E;
+    private String id_E;
     private String NombreEstacion;
     private String DireccionEstacion;
     private String TelefonoEstacion;
+    private Double Latitud;
+    private Double Longitud;
 
     public Estaciones(){
 
     }
 
-    public Estaciones(int id_E, String nombreEstacion, String direccionEstacion, String telefonoEstacion) {
+    public Estaciones(String id_E, String nombreEstacion, String direccionEstacion, String telefonoEstacion, Double latitud, Double longitud) {
         this.id_E = id_E;
         NombreEstacion = nombreEstacion;
         DireccionEstacion = direccionEstacion;
         TelefonoEstacion = telefonoEstacion;
+        Latitud = latitud;
+        Latitud = longitud;
     }
 
-    public int getId_E() {
+    public Double getLatitud() {
+        return Latitud;
+    }
+
+    public void setLatitud(Double latitud) {
+        Latitud = latitud;
+    }
+
+    public Double getLongitud() {
+        return Longitud;
+    }
+
+    public void setLongitud(Double longitud) {
+        Longitud = longitud;
+    }
+
+    public String getId_E() {
         return id_E;
     }
 
-    public void setId_E(int id_E) {
+    public void setId_E(String id_E) {
         this.id_E = id_E;
     }
 

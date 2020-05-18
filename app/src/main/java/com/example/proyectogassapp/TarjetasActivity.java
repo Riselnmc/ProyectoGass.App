@@ -1,79 +1,85 @@
 package com.example.proyectogassapp;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-
 import android.annotation.SuppressLint;
 import android.content.Intent;
-import android.database.Cursor;
-import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.TextView;
-
-import com.example.proyectogassapp.adaptadores.ListTarjetasAdapter;
+import com.example.proyectogassapp.Adaptadores.AdaptadorTarjetas;
 import com.example.proyectogassapp.entidades.Tarjetas;
-import com.example.proyectogassapp.utilidades.Utilidades;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.Query;
+import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
 
-
 public class TarjetasActivity extends AppCompatActivity {
 
-    RecyclerView recyclerView;
-    ConexionDB db;
-    ArrayList<Tarjetas>listTarjetas;
+    RecyclerView listaTarjetas;
     TextView tvTarjeta, tvTitular,tvFechaV;
+    ArrayList<Tarjetas>mListaTarjetas = new ArrayList<>();
+
+    private AdaptadorTarjetas adaptador;
+    DatabaseReference mDatabase;
+    FirebaseAuth mAuth;
 
     @SuppressLint("SetTextI18n")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tarjetas);
-        db = new ConexionDB(this);
+        //Instanciar la base de datos
+        mDatabase = FirebaseDatabase.getInstance().getReference();
+        mAuth = FirebaseAuth.getInstance();
+
+        //Referencia y metodo click para volver al mapa
         findViewById(R.id.Imgvolver).setOnClickListener(v -> {
             Intent atras = new Intent(TarjetasActivity.this, MapaActivity.class);
             startActivity(atras);
             finish();
         });
+        //Referencia de las variables
         tvTarjeta = findViewById(R.id.tv_Tarjeta);
         tvTitular = findViewById(R.id.tv_Titular);
         tvFechaV = findViewById(R.id.tv_Fecha);
-        recyclerView = findViewById(R.id.recyclerView);
-        recyclerView.setLayoutManager(new LinearLayoutManager(this));
-        mostrarTarjetas();
+        listaTarjetas = findViewById(R.id.recyclerView);
+        listaTarjetas.setLayoutManager(new LinearLayoutManager(this));
+        consultarDatos();
+        findViewById(R.id.btn_agregarT).setOnClickListener(v ->
+                startActivity(new Intent(TarjetasActivity.this, AgregarTarjetaActivity.class)));
+    }
 
-        ListTarjetasAdapter adapter = new ListTarjetasAdapter(listTarjetas);
-        adapter.setOnClickListener(v -> {
-            String numeroTarjeta = listTarjetas.get(recyclerView.getChildAdapterPosition(v)).getNumeroTarjeta();
-            String titular = listTarjetas.get(recyclerView.getChildAdapterPosition(v)).getTitular();
-            String fechaV = listTarjetas.get(recyclerView.getChildAdapterPosition(v)).getMes()+"/"+listTarjetas.get(recyclerView.getChildAdapterPosition(v)).getYear();
-            tvTarjeta.setText(numeroTarjeta);
-            tvFechaV.setText("Vence: "+fechaV);
-            tvTitular.setText("Titular: "+titular);
-        });
-        recyclerView.setAdapter(adapter);
-        findViewById(R.id.btn_agregarT).setOnClickListener(v -> {
-            Intent moveTarget = new Intent(TarjetasActivity.this, AgregarTarjetaActivity.class);
-            startActivity(moveTarget);
+    private void consultarDatos() {
+        //Le dara a la varible @id el id del usuario que se encuentra logueado
+        String id = mAuth.getCurrentUser().getUid();
+        mDatabase.child("Tarjetas").addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                if (dataSnapshot.exists()){
+                    for (DataSnapshot snapshot : dataSnapshot.getChildren()){
+                        Tarjetas tarjetas = snapshot.getValue(Tarjetas.class);
+                        tarjetas.getNumeroTarjeta();
+                        tarjetas.getTitular();
+                        tarjetas.getFechaVencimiento();
+                        mListaTarjetas.add(tarjetas);
+                    }
+                    adaptador = new AdaptadorTarjetas(mListaTarjetas);
+                    listaTarjetas.setAdapter(adaptador);
+                }
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError databaseError) {
+
+            }
         });
     }
 
-    private void mostrarTarjetas() {
-        SQLiteDatabase sqLiteDatabase = db.getReadableDatabase();
-
-        Tarjetas tarjeta;
-        listTarjetas = new ArrayList<>();
-        Cursor cursor = sqLiteDatabase.rawQuery("SELECT * FROM "+ Utilidades.TABLA_TARJETAS,null);
-        while (cursor.moveToNext()){
-            tarjeta = new Tarjetas();
-            tarjeta.setId_T(cursor.getInt(0));
-            tarjeta.setTitular(cursor.getString(1));
-            tarjeta.setNumeroTarjeta(cursor.getString(2));
-            tarjeta.setMes(cursor.getString(3));
-            tarjeta.setYear(cursor.getString(4));
-            listTarjetas.add(tarjeta);
-        }
-    }
 }
