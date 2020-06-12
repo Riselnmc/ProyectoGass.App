@@ -1,12 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!--Colores primarios de la aplicación -->
     <color name="colorPrimary">#000000</color>
     <color name="colorPrimaryDark">#512DAB</color>
-    <color name="colorAccent">#57CBFF</color>
-    <color name="colorPrimaryText">#212121</color>
-    <color name="colorWhite">#FFFFFF</color>
-    <color name="transparente">#00111111</color>
-    <color name="login">#4CAF50</color>
+    <color name="colorAccent">#000</color>
+
+    <!--Colores para el texto-->
+    <color name="textWhite">#FFFFFF</color>
+
+    <!--Color para los botones y TextView-->
+    <color name="color_verde">#4CAF50</color>
+    <color name="color_azul">#03A9F4</color>
+
+    <!-- Color EditText -->
+    <color name="color_edt">#BCB7B7</color>
+
+    <!-- Color fondo activitys -->
     <color name="background_fondo">#FAFAFA</color>
+
+    <!-- Color para el botón escanear -->
     <color name="btn_scaner">#282C43</color>
 </resources>

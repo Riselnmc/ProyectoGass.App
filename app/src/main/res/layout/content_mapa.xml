@@ -31,43 +31,60 @@
             android:layout_height="wrap_content"
             android:src="@drawable/ic_location"
             android:layout_centerInParent="true"
-            android:translationY="-20dp"/>
+            android:translationY="-20dp"
+            android:contentDescription="@string/DescripcionImaen" />
 
     </com.skyfishjy.library.RippleBackground>
 
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
+    <ImageButton
         android:id="@+id/menu"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
         android:layout_margin="20dp"
         android:src="@drawable/ic_menu"
-        app:backgroundTint="@color/colorWhite"
-        app:maxImageSize="28dp" />
+        android:background="@drawable/boton_circular"
+        android:elevation="8dp"/>
 
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
+    <ImageButton
         android:id="@+id/fab_location_search"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
         android:layout_margin="20dp"
-        app:maxImageSize="28dp"
-        app:backgroundTint="@color/colorWhite"
-        android:src="@drawable/ic_magnifying_glass"/>
+        android:elevation="8dp"
+        android:background="@drawable/boton_circular"
+        android:src="@drawable/ic_magnifying_glass" />
 
     <Button
         android:id="@+id/find"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Encontrar estaciones"
-        android:textColor="@color/colorWhite"
+        android:text="@string/btn_EncontrarEstaciones"
+        android:textColor="@color/textWhite"
         android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
         android:layout_margin="30dp"
         android:textSize="20sp"
-        android:background="#2196F3"/>
+        android:background="@color/color_verde"/>
+
+    <ImageButton
+        android:id="@+id/mar"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        mapbox:srcCompat="@drawable/ic_marcador"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="90dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginEnd="20dp"
+        android:elevation="8dp"
+        android:background="@drawable/boton_circular"/>
+
 
 </RelativeLayout>

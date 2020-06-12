@@ -3,27 +3,19 @@
 
     <item
         android:id="@+id/perfil"
-        android:icon="@drawable/profile"
-        android:title="@string/Item_perfil"/>
-    <item
-        android:id="@+id/tarjetas"
-        android:icon="@drawable/card"
-        android:title="@string/Item_tarjetas"/>
-    <item
-        android:id="@+id/historial"
-        android:icon="@drawable/historial"
-        android:title="@string/Item_historial"/>
+        android:icon="@drawable/perfil"
+        android:title="@string/Ac_Perfil"/>
     <item
         android:id="@+id/terminos"
         android:icon="@drawable/terminos"
-        android:title="@string/Item_terminos"/>
+        android:title="@string/Ac_Terminos"/>
     <item
         android:id="@+id/about"
         android:icon="@drawable/acerca"
-        android:title="@string/Item_about"/>
+        android:title="@string/Ac_AcercaDe"/>
     <item
         android:id="@+id/logout"
-        android:icon="@drawable/profile"
-        android:title="Cerrar sesión"/>
+        android:icon="@drawable/logout"
+        android:title="@string/cerrarSesion"/>
 
 </menu>

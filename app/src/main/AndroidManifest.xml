@@ -13,17 +13,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".EliminarCuentaActivity"></activity>
+        <activity android:name=".InstruccionesActivity"></activity>
+        <activity android:name=".CambiarCorreoActivity" />
+        <activity android:name=".EliminarCuentaActivity" />
         <activity android:name=".RestablecerClaveActivity" />
         <activity android:name=".DetalleEstacionActivity" />
         <activity android:name=".EstacionesActivity" />
         <activity android:name=".AgregarTarjetaActivity" />
         <activity android:name=".MapaActivity" />
-
-        <meta-data
-            android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyBHidwOYGqTAucK9oZVPkALgWK0Bur1CTU" />
-
         <activity android:name=".PerfilActivity" />
         <activity android:name=".TarjetasActivity" />
         <activity android:name=".RegistrarActivity" />

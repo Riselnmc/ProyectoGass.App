@@ -4,30 +4,22 @@ import java.io.Serializable;
 
 public class Tarjetas implements Serializable {
 
-    private String id_T;
     private String Titular;
     private String NumeroTarjeta;
     private String FechaVencimiento;
     private String Clave;
+    private String IdUsuario;
 
     public Tarjetas(){
 
     }
 
-    public Tarjetas(String id_T, String titular, String numeroTarjeta, String fechaVencimiento, String clave) {
-        this.id_T = id_T;
+    public Tarjetas(String titular, String numeroTarjeta, String fechaVencimiento, String clave, String idUsuario) {
         Titular = titular;
         NumeroTarjeta = numeroTarjeta;
         FechaVencimiento = fechaVencimiento;
         Clave = clave;
-    }
-
-    public String getId_T() {
-        return id_T;
-    }
-
-    public void setId_T(String id_T) {
-        this.id_T = id_T;
+        IdUsuario = idUsuario;
     }
 
     public String getTitular() {
@@ -50,9 +42,7 @@ public class Tarjetas implements Serializable {
         return FechaVencimiento;
     }
 
-    public void setFechaVencimiento(String fechaVencimiento) {
-        FechaVencimiento = fechaVencimiento;
-    }
+    public void setFechaVencimiento(String fechaVencimiento) { FechaVencimiento = fechaVencimiento; }
 
     public String getClave() {
         return Clave;
@@ -61,4 +51,8 @@ public class Tarjetas implements Serializable {
     public void setClave(String clave) {
         Clave = clave;
     }
+
+    public String getIdUsuario() { return IdUsuario; }
+
+    public void setIdUsuario(String idUsuario) { IdUsuario = idUsuario; }
 }

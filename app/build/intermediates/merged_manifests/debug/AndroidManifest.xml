@@ -11,6 +11,7 @@
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
 
     <uses-feature
         android:glEsVersion="0x00020000"
@@ -46,16 +47,14 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppTheme" >
+        <activity android:name="com.example.proyectogassapp.InstruccionesActivity" />
+        <activity android:name="com.example.proyectogassapp.CambiarCorreoActivity" />
+        <activity android:name="com.example.proyectogassapp.EliminarCuentaActivity" />
         <activity android:name="com.example.proyectogassapp.RestablecerClaveActivity" />
         <activity android:name="com.example.proyectogassapp.DetalleEstacionActivity" />
         <activity android:name="com.example.proyectogassapp.EstacionesActivity" />
         <activity android:name="com.example.proyectogassapp.AgregarTarjetaActivity" />
         <activity android:name="com.example.proyectogassapp.MapaActivity" />
-
-        <meta-data
-            android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyBHidwOYGqTAucK9oZVPkALgWK0Bur1CTU" />
-
         <activity android:name="com.example.proyectogassapp.PerfilActivity" />
         <activity android:name="com.example.proyectogassapp.TarjetasActivity" />
         <activity android:name="com.example.proyectogassapp.RegistrarActivity" />
@@ -67,6 +66,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name="com.mapbox.services.android.navigation.ui.v5.MapboxNavigationActivity" />
         <activity
             android:name="com.mapbox.mapboxsdk.plugins.places.autocomplete.ui.PlaceAutocompleteActivity"
             android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
@@ -75,6 +75,9 @@
         <activity
             android:name="com.mapbox.mapboxsdk.plugins.places.picker.ui.PlacePickerActivity"
             android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" />
+
+        <service android:name="com.mapbox.services.android.navigation.v5.internal.navigation.NavigationService" />
+
         <activity
             android:name="io.card.payment.CardIOActivity"
             android:configChanges="keyboardHidden|orientation" />
@@ -96,9 +99,6 @@
                 android:value="com.google.firebase.components.ComponentRegistrar" />
             <meta-data
                 android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar"
-                android:value="com.google.firebase.components.ComponentRegistrar" />
-            <meta-data
-                android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"
                 android:value="com.google.firebase.components.ComponentRegistrar" />
             <meta-data
                 android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
@@ -158,9 +158,13 @@
             android:initOrder="100" />
 
         <service
-            android:name="com.mapbox.android.telemetry.crash.CrashReporterJobIntentService"
+            android:name="com.mapbox.android.telemetry.errors.ErrorReporterJobIntentService"
             android:permission="android.permission.BIND_JOB_SERVICE" />
 
+        <provider
+            android:name="com.squareup.picasso.PicassoProvider"
+            android:authorities="com.example.proyectogassapp.com.squareup.picasso"
+            android:exported="false" />
         <provider
             android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
             android:authorities="com.example.proyectogassapp.lifecycle-process"

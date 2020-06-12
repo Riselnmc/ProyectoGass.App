@@ -4,24 +4,24 @@ import java.io.Serializable;
 
 public class Estaciones implements Serializable {
 
-    private String id_E;
     private String NombreEstacion;
     private String DireccionEstacion;
     private String TelefonoEstacion;
     private Double Latitud;
     private Double Longitud;
+    private String IdServicio;
 
     public Estaciones(){
 
     }
 
-    public Estaciones(String id_E, String nombreEstacion, String direccionEstacion, String telefonoEstacion, Double latitud, Double longitud) {
-        this.id_E = id_E;
+    public Estaciones(String nombreEstacion, String direccionEstacion, String telefonoEstacion, Double latitud, Double longitud, String idServicio) {
         NombreEstacion = nombreEstacion;
         DireccionEstacion = direccionEstacion;
         TelefonoEstacion = telefonoEstacion;
         Latitud = latitud;
-        Latitud = longitud;
+        Longitud = longitud;
+        IdServicio = idServicio;
     }
 
     public Double getLatitud() {
@@ -40,14 +40,6 @@ public class Estaciones implements Serializable {
         Longitud = longitud;
     }
 
-    public String getId_E() {
-        return id_E;
-    }
-
-    public void setId_E(String id_E) {
-        this.id_E = id_E;
-    }
-
     public String getNombreEstacion() {
         return NombreEstacion;
     }
@@ -63,12 +55,19 @@ public class Estaciones implements Serializable {
     public void setDireccionEstacion(String direccionEstacion) {
         DireccionEstacion = direccionEstacion;
     }
-
     public String getTelefonoEstacion() {
         return TelefonoEstacion;
     }
 
     public void setTelefonoEstacion(String telefonoEstacion) {
         TelefonoEstacion = telefonoEstacion;
+    }
+
+    public String getIdServicio() {
+        return IdServicio;
+    }
+
+    public void setIdServicio(String idServicio) {
+        IdServicio = idServicio;
     }
 }

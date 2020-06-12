@@ -1,35 +1,17 @@
 package com.example.proyectogassapp;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.TextView;
-import android.widget.Toast;
-
-import com.google.android.gms.tasks.OnCompleteListener;
-import com.google.android.gms.tasks.OnFailureListener;
-import com.google.android.gms.tasks.OnSuccessListener;
-import com.google.android.gms.tasks.Task;
-import com.google.firebase.auth.AuthCredential;
-import com.google.firebase.auth.EmailAuthProvider;
 import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.auth.FirebaseUser;
-import com.google.firebase.database.DatabaseReference;
-import com.google.firebase.database.FirebaseDatabase;
-import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
-
-import java.security.AuthProvider;
+import java.util.Objects;
 
 public class PerfilActivity extends AppCompatActivity {
 
     TextView nameU,lastNameU,emailU;
     String id;
-    String correo;
-    String clave;
-    DatabaseReference mDatabase;
     FirebaseAuth mAuth;
     FirebaseFirestore db;
 
@@ -39,7 +21,6 @@ public class PerfilActivity extends AppCompatActivity {
         setContentView(R.layout.activity_perfil);
 
         mAuth = FirebaseAuth.getInstance();
-        mDatabase = FirebaseDatabase.getInstance().getReference();
         db = FirebaseFirestore.getInstance();
 
         nameU = findViewById(R.id.nombreUsuario);
@@ -48,12 +29,13 @@ public class PerfilActivity extends AppCompatActivity {
         getUserInfo();
 
         findViewById(R.id.Imgvolver).setOnClickListener(v -> {
-            Intent atras = new Intent(PerfilActivity.this, MapaActivity.class);
-            startActivity(atras);
-            finish();
+            startActivity(new Intent(PerfilActivity.this, MapaActivity.class));
         });
 
-        //Evento para eliminar cuenta
+        findViewById(R.id.moveCambiarCorreo).setOnClickListener(v -> {
+            startActivity(new Intent(PerfilActivity.this, CambiarCorreoActivity.class));
+        });
+
         findViewById(R.id.EliminarCuenta).setOnClickListener(v -> {
 
             startActivity(new Intent(PerfilActivity.this,EliminarCuentaActivity.class));
@@ -62,7 +44,7 @@ public class PerfilActivity extends AppCompatActivity {
     }
 
     private void getUserInfo(){
-        id = mAuth.getCurrentUser().getUid();
+        id = Objects.requireNonNull(mAuth.getCurrentUser()).getUid();
         db.collection("Usuarios").document(id).get().addOnSuccessListener(documentSnapshot -> {
             if (documentSnapshot.exists()){
                 String nombre = documentSnapshot.getString("nombres");

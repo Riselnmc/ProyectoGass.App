@@ -1,42 +1,34 @@
 {
   "project_info": {
-    "project_number": "523972206197",
-    "firebase_url": "https://gassapp1-40e80.firebaseio.com",
-    "project_id": "gassapp1-40e80",
-    "storage_bucket": "gassapp1-40e80.appspot.com"
+    "project_number": "709973423317",
+    "firebase_url": "https://proyectogassapp.firebaseio.com",
+    "project_id": "proyectogassapp",
+    "storage_bucket": "proyectogassapp.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:523972206197:android:002cb1608baf42b316a23c",
+        "mobilesdk_app_id": "1:709973423317:android:c3e8c4fd931759d5eb5e5c",
         "android_client_info": {
           "package_name": "com.example.proyectogassapp"
         }
       },
       "oauth_client": [
         {
-          "client_id": "523972206197-30ntok6i5ev5nm8i6jm3rn0h6t9ro391.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "com.example.proyectogassapp",
-            "certificate_hash": "0f347d117f7be1c82b5c24bf2d7dff9993e3be00"
-          }
-        },
-        {
-          "client_id": "523972206197-hp8nm6ujqisc5i36pc0b4oj8l997a5k0.apps.googleusercontent.com",
+          "client_id": "709973423317-3hf2hqr9sosm720ekvm913360j939053.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyAy1C8JbOiuIOTG2SCj0QJSbZAmXaqhqfM"
+          "current_key": "AIzaSyB3jCiu81iKp5pmqc7NpnqeKrnRvW8kE-M"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "523972206197-hp8nm6ujqisc5i36pc0b4oj8l997a5k0.apps.googleusercontent.com",
+              "client_id": "709973423317-3hf2hqr9sosm720ekvm913360j939053.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

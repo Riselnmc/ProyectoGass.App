@@ -3,60 +3,68 @@ package com.example.proyectogassapp;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
 import android.app.ProgressDialog;
 import android.os.Bundle;
+import android.view.Gravity;
+import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
+import com.google.android.material.textfield.TextInputLayout;
 import com.google.firebase.auth.FirebaseAuth;
 
 public class RestablecerClaveActivity extends AppCompatActivity {
 
-    private EditText emailU;
-    private Button btnReset;
+    //Variables para los componentes de la vista
+    TextInputLayout emailU;
 
-    //Variable que contiene el email ingresado
+    //Variable para el correo
     private String email = "";
 
-    //Variable para la autentificación del usuario
+    //Variable para el autenticador
     FirebaseAuth mAuth;
 
-    //Variable para mostrar mensaje
-    private ProgressDialog mDialog;
+    //Variable del cuadro de dialogo
+    ProgressDialog pd;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_restablecer_clave);
 
-        //Instanciar autentificación de usuario
+        //Instanciar autenticador
         mAuth = FirebaseAuth.getInstance();
 
-        //Igualar
-        mDialog = new ProgressDialog(this);
+        //Instanciar cuadro de dialogo
+        pd = new ProgressDialog(this);
 
+        //Referenciar la parte lógica con la vista
         emailU = findViewById(R.id.emailUsuario);
-        btnReset = findViewById(R.id.restablecerClave);
+        Button btnReset = findViewById(R.id.restablecerClave);
 
         btnReset.setOnClickListener(v -> {
 
             //Darle a la varible los valores ingresados en el campo de texto
-            email = emailU.getText().toString().toLowerCase().trim();
+            email = emailU.getEditText().getText().toString().toLowerCase().trim();
 
-            //Condición de verificación para saber si el campo esta vacio o no
+            //Verificar que el campo sea diferente de vacio
             if (!email.isEmpty()){
-                mDialog.setMessage("Espere un momento...");
-                //No permite que el usuario le de click en otro lugar mientras el mensaje se muestra
-                mDialog.setCanceledOnTouchOutside(false);
-                mDialog.show();
+                //Mensaje que queremos mostrar en el cuadro de dialogo
+                pd.setMessage("Enviando correo...");
+                //No permite que el usuario le de click en otro lugar de la pantalla mientras el mensaje se muestra
+                pd.setCanceledOnTouchOutside(false);
+                pd.show();
                 //Utilizar metodo de enviar correo
                 enviarCorreo();
             }else{
-                Toast.makeText(RestablecerClaveActivity.this, "El campo es obligatorio", Toast.LENGTH_SHORT).show();
+                emailU.setError("El correo es obligatorio");
             }
 
         });
@@ -68,13 +76,26 @@ public class RestablecerClaveActivity extends AppCompatActivity {
         mAuth.setLanguageCode("es");
         mAuth.sendPasswordResetEmail(email).addOnCompleteListener(task -> {
             if (task.isSuccessful()){
-                Toast.makeText(RestablecerClaveActivity.this, "Correo enviado con exito", Toast.LENGTH_SHORT).show();
+                mostrarToastP("Correo enviado!");
             }else {
-                Toast.makeText(RestablecerClaveActivity.this, "No se pudo enviar el correo", Toast.LENGTH_SHORT).show();
+                mostrarToastP("Error al enviar correo");
             }
             //Cerrar mensaje
-            mDialog.dismiss();
+            pd.dismiss();
         });
+    }
+
+    private void mostrarToastP(String texto){
+        LayoutInflater inflater = getLayoutInflater();
+        View view = inflater.inflate(R.layout.toast_personalizado, findViewById(R.id.toastPersonalizado));
+        TextView textView = view.findViewById(R.id.tv_titulo1);
+        textView.setText(texto);
+
+        Toast toast = new Toast(this);
+        toast.setGravity(Gravity.CENTER_VERTICAL | Gravity.CENTER_HORIZONTAL, 0, 0);
+        toast.setDuration(Toast.LENGTH_SHORT);
+        toast.setView(view);
+        toast.show();
     }
 
 }

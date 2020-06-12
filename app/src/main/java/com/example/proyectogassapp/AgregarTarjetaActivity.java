@@ -1,6 +1,5 @@
 package com.example.proyectogassapp;
 
-import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import android.annotation.SuppressLint;
@@ -12,14 +11,12 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
-
-import com.google.android.gms.tasks.OnCompleteListener;
-import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.FirebaseFirestore;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Objects;
+
 import io.card.payment.CardIOActivity;
 import io.card.payment.CreditCard;
 
@@ -43,7 +40,7 @@ public class AgregarTarjetaActivity extends AppCompatActivity {
     FirebaseAuth mAuth;
     FirebaseFirestore db;
 
-    //@SuppressLint("SetTextI18n") se utilizar para permitir texto en el @setText, normalmente se ingresan variables
+    //@SuppressLint("SetTextI18n") se utiliza para permitir texto en el @setText, normalmente se ingresan variables
     @SuppressLint("SetTextI18n")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -85,10 +82,21 @@ public class AgregarTarjetaActivity extends AppCompatActivity {
             public void onTextChanged(CharSequence s, int start, int before, int count) {
                 String numberT = numberC.getText().toString();
                 if (numberT.length() == 0){
-                    tvTarjeta.setText(R.string.numberCard);
+                    tvTarjeta.setText(R.string.tv_NumeroTarjeta  );
                 }else {
                     tvTarjeta.setText(numberT);
                 }
+
+                if (count <= numberC.getText().toString().length() &&(numberC.getText().toString().length()==4 ||numberC.getText().toString().length()==9 ||numberC.getText().toString().length()==14)){
+                    numberC.setText(numberC.getText().toString()+" ");
+                    int pos = numberC.getText().length();
+                    numberC.setSelection(pos);
+                }else if (count >= numberC.getText().toString().length() &&(numberC.getText().toString().length()==4 ||numberC.getText().toString().length()==9 ||numberC.getText().toString().length()==14)){
+                    numberC.setText(numberC.getText().toString().substring(0,numberC.getText().toString().length()-1));
+                    int pos = numberC.getText().length();
+                    numberC.setSelection(pos);
+                }
+                count = numberC.getText().toString().length();
 
             }
 
@@ -106,11 +114,12 @@ public class AgregarTarjetaActivity extends AppCompatActivity {
 
             @Override
             public void onTextChanged(CharSequence s, int start, int before, int count) {
-                String mes = mesV.getText().toString();
-                if (mes.length() == 0){
-                    mesV.setText("Vence : 00/00");
+                String mes = mesV.getText().toString().trim();
+                String year = yearV.getText().toString().trim();
+                if (mes.length() == 0 && year.length() == 0){
+                    tvFecha.setText("Vence: 00/00");
                 }else {
-                    tvFecha.setText("Vence: "+mes);
+                    tvFecha.setText("Vence: "+mes+"/"+year);
                 }
             }
 
@@ -128,8 +137,8 @@ public class AgregarTarjetaActivity extends AppCompatActivity {
 
             @Override
             public void onTextChanged(CharSequence s, int start, int before, int count) {
-                mes = mesV.getText().toString();
-                year = yearV.getText().toString();
+                mes = mesV.getText().toString().trim();
+                year = yearV.getText().toString().trim();
                 tvFecha.setText("Vence: "+mes+"/"+year);
             }
 
@@ -151,7 +160,7 @@ public class AgregarTarjetaActivity extends AppCompatActivity {
         Scaner.setOnClickListener(v -> {
             Intent Scan = new Intent(AgregarTarjetaActivity.this, CardIOActivity.class)
                     .putExtra(CardIOActivity.EXTRA_REQUIRE_EXPIRY,true)
-                    .putExtra(CardIOActivity.EXTRA_REQUIRE_CVV,false)
+                    .putExtra(CardIOActivity.EXTRA_REQUIRE_CVV,true)
                     .putExtra(CardIOActivity.EXTRA_REQUIRE_CARDHOLDER_NAME,true);
             startActivityForResult(Scan, Scan_result);
         });
@@ -160,7 +169,11 @@ public class AgregarTarjetaActivity extends AppCompatActivity {
             numeroC = numberC.getText().toString();
             fechaV = mes+"/"+year;
             claveSe = claveS.getText().toString().trim();
-            registrarTarjetas();
+            if(!nombreT.isEmpty() && !numeroC.isEmpty() && !fechaV.isEmpty() && !claveSe.isEmpty()){
+                registrarTarjetas();
+            }else {
+                Toast.makeText(this, "Todos los campos son necesarios", Toast.LENGTH_SHORT).show();
+            }
         });
 
     }
@@ -169,7 +182,7 @@ public class AgregarTarjetaActivity extends AppCompatActivity {
     private void registrarTarjetas() {
 
         //Traer el id del usuario para tenerlo como llave foranea
-        String idUsuario = mAuth.getCurrentUser().getUid();
+        String idUsuario = Objects.requireNonNull(mAuth.getCurrentUser()).getUid();
 
         /*
          *@Map para guardar los datos
@@ -219,10 +232,7 @@ public class AgregarTarjetaActivity extends AppCompatActivity {
 
                 //Verificar que la tarjeta no haya expirado según la fecha
                 if (scanResult.isExpiryValid()){
-                    mes = String.valueOf(scanResult.expiryMonth);
-                    year = String.valueOf(scanResult.expiryYear);
-                    mesV.setText(mes);
-                    yearV.setText("/"+year);
+
                 }
             }
         }

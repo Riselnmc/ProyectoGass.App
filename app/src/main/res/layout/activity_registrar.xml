@@ -11,7 +11,7 @@
         android:id="@+id/layoutToolbar"
         android:layout_width="match_parent"
         android:layout_height="?actionBarSize"
-        android:background="@color/transparente"
+        android:background="@color/textWhite"
         android:gravity="center_vertical"
         android:orientation="horizontal"
         android:elevation="1dp"
@@ -23,16 +23,15 @@
             android:id="@+id/volver"
             android:layout_width="30dp"
             android:layout_height="30dp"
-            android:contentDescription="@string/txt_Correo"
+            android:contentDescription="@string/DescripcionImaen"
             android:src="@drawable/volver" />
 
         <TextView
-            android:id="@+id/textTile"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="20dp"
             android:layout_marginLeft="20dp"
-            android:text="@string/tv_Registrate"
+            android:text="@string/Ac_CrearCuenta"
             android:textColor="#000000"
             android:textSize="24sp"
             android:textStyle="bold" />
@@ -50,126 +49,129 @@
                 android:paddingLeft="15dp"
                 android:paddingRight="15dp">
 
-                <EditText
-                    android:id="@+id/txtNombres"
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/txtNombres1"
+                    android:layout_marginTop="10dp"
                     android:layout_width="match_parent"
-                    android:layout_height="59dp"
-                    android:autofillHints=""
-                    android:hint="@string/txt_Nombres"
-                    android:inputType="textPersonName"
-                    android:textSize="18sp" />
-
-                <TextView
-                    android:id="@+id/problemaNombre"
-                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text=""
-                    android:textColor="#FF0000"
-                    android:textSize="12sp" />
+                    app:errorEnabled="true">
 
-                <EditText
-                    android:id="@+id/txtApellidos"
+                    <EditText
+                        android:id="@+id/txtNombres"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/tv_nombre"
+                        android:backgroundTint="@color/color_edt"
+                        android:inputType="textPersonName"
+                        android:autofillHints="" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/txtApellidos1"
+                    android:layout_marginTop="10dp"
                     android:layout_width="match_parent"
-                    android:layout_height="59dp"
-                    android:autofillHints=""
-                    android:hint="@string/txt_Apellidos"
-                    android:inputType="textPersonName"
-                    android:textSize="18sp" />
-
-                <TextView
-                    android:id="@+id/problemaApellido"
-                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text=""
-                    android:textColor="#FF0000"
-                    android:textSize="12sp" />
+                    app:errorEnabled="true">
 
-                <EditText
-                    android:id="@+id/txtCorreo"
+                    <EditText
+                        android:id="@+id/txtApellidos"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/tv_Apellidos"
+                        android:backgroundTint="@color/color_edt"
+                        android:inputType="text"
+                        android:autofillHints="" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/txtCorreo1"
+                    android:layout_marginTop="15dp"
                     android:layout_width="match_parent"
-                    android:layout_height="59dp"
-                    android:autofillHints=""
-                    android:hint="@string/txt_Correo"
-                    android:inputType="textEmailAddress"
-                    android:textSize="18sp" />
-
-                <TextView
-                    android:id="@+id/problemaCorreo"
-                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text=""
-                    android:textColor="#FF0000"
-                    android:textSize="12sp" />
+                    app:errorEnabled="true">
 
-                <EditText
-                    android:id="@+id/txtPassword"
+                    <EditText
+                        android:id="@+id/txtCorreo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/edt_CorreoElectronico"
+                        android:backgroundTint="@color/color_edt"
+                        android:inputType="textEmailAddress"
+                        android:autofillHints="" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/txtPassword1"
+                    android:layout_marginTop="10dp"
                     android:layout_width="match_parent"
-                    android:layout_height="59dp"
-                    android:autofillHints=""
-                    android:hint="@string/txt_Pass"
-                    android:inputType="textPassword"
-                    android:textSize="18sp" />
-
-                <TextView
-                    android:id="@+id/problemaPass"
-                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text=""
-                    android:textColor="#FF0000"
-                    android:textSize="12sp" />
+                    app:errorEnabled="true"
+                    app:passwordToggleEnabled="true">
 
-                <EditText
-                    android:id="@+id/txtPasswordConfirm"
+                    <EditText
+                        android:id="@+id/txtPassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/color_edt"
+                        android:hint="@string/edt_Contraseña"
+                        android:inputType="textPassword"
+                        android:autofillHints="" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/txtPasswordConfirm1"
+                    android:layout_marginTop="10dp"
                     android:layout_width="match_parent"
-                    android:layout_height="59dp"
-                    android:autofillHints=""
-                    android:hint="@string/txt_PassConfirm"
-                    android:inputType="textPassword"
-                    android:textSize="18sp" />
-
-                <TextView
-                    android:id="@+id/problemaPassC"
-                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text=""
-                    android:textColor="#FF0000"
-                    android:textSize="12sp" />
+                    app:errorEnabled="true"
+                    app:passwordToggleEnabled="true">
 
-                <EditText
-                    android:id="@+id/txtTel"
+                    <EditText
+                        android:id="@+id/txtPasswordConfirm"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/edt_ConfirmarContraseña"
+                        android:backgroundTint="@color/color_edt"
+                        android:inputType="textPassword"
+                        android:autofillHints="" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/txtTel1"
+                    android:layout_marginTop="10dp"
                     android:layout_width="match_parent"
-                    android:layout_height="59dp"
-                    android:autofillHints=""
-                    android:hint="@string/txt_Tel"
-                    android:inputType="phone"
-                    android:maxLength="10"
-                    android:textSize="18sp" />
-
-                <TextView
-                    android:id="@+id/problemaTele"
-                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text=""
-                    android:textColor="#FF0000"
-                    android:textSize="12sp" />
+                    app:errorEnabled="true">
+
+                    <EditText
+                        android:id="@+id/txtTel"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:autofillHints=""
+                        android:backgroundTint="@color/color_edt"
+                        android:hint="@string/edt_Telefono"
+                        android:inputType="number|phone" />
+
+                </com.google.android.material.textfield.TextInputLayout>
 
                 <Button
                     android:id="@+id/btnRegistrar"
-                    android:layout_width="200sp"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp"
+                    android:layout_marginTop="10dp"
                     android:layout_marginBottom="10sp"
-                    android:background="#03A9F4"
+                    android:background="@drawable/btn_login"
                     android:text="@string/btn_Registrarme"
+                    android:onClick="confirmarRegistro"
                     android:textColor="#FFFFFF"
-                    android:textSize="18sp"
+                    android:textSize="20sp"
                     android:textStyle="bold" />
 
             </LinearLayout>
-
         </ScrollView>
-
-
-
-
 </LinearLayout>

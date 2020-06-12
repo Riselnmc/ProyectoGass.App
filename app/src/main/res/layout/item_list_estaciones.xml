@@ -23,21 +23,23 @@
                     android:textSize="18sp"
                     android:textStyle="bold"
                     android:textColor="#000"
-                    android:text="Nombre estación"/>
+                    android:text="@string/tv_NombreEstacion"/>
 
                 <TextView
                     android:id="@+id/direccionEstacion"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textSize="16sp"
-                    android:text="Dirección"
+                    android:text="@string/tv_Direccion"
                     android:layout_marginTop="5dp"/>
 
                 <TextView
+                    android:id="@+id/mostrarInfo"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textSize="16sp"
-                    android:text="A: 5km"
+                    android:text="Ver más..."
+                    android:textColor="@color/color_azul"
                     android:layout_marginTop="5dp"/>
 
             </LinearLayout>

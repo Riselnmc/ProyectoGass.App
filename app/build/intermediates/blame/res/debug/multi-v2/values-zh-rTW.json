@@ -4,6 +4,23 @@
             "outputFile": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-zh-rTW\\values-zh-rTW.xml",
             "map": [
                 {
+                    "source": "C:\\Users\\rinam\\.gradle\\caches\\transforms-2\\files-2.1\\72d9d8fa0ee6fb924c5034e47f7f93ad\\jetified-mapbox-android-sdk-9.2.1\\res\\values-zh-rTW\\values-zh-rTW.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,136,236,305,373,442,517,604,709,790,883,968,1082,1142",
+                        "endColumns": "80,99,68,67,68,74,86,104,80,92,84,113,59,64",
+                        "endOffsets": "131,231,300,368,437,512,599,704,785,878,963,1077,1137,1202"
+                    },
+                    "to": {
+                        "startLines": "47,48,49,50,51,52,53,54,55,56,57,58,59,60",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "4979,5060,5160,5229,5297,5366,5441,5528,5633,5714,5807,5892,6006,6066",
+                        "endColumns": "80,99,68,67,68,74,86,104,80,92,84,113,59,64",
+                        "endOffsets": "5055,5155,5224,5292,5361,5436,5523,5628,5709,5802,5887,6001,6061,6126"
+                    }
+                },
+                {
                     "source": "C:\\Users\\rinam\\.gradle\\caches\\transforms-2\\files-2.1\\164bb505b81f338baa0db13edd04c1d1\\jetified-play-services-basement-17.0.0\\res\\values-zh-rTW\\values.xml",
                     "from": {
                         "startLines": "4",
@@ -18,23 +35,6 @@
                         "startOffsets": "3693",
                         "endColumns": "161",
                         "endOffsets": "3850"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\rinam\\.gradle\\caches\\transforms-2\\files-2.1\\4aa0b94a3fd3badde8f112bf4364f3a2\\jetified-mapbox-android-sdk-9.1.0-beta.2\\res\\values-zh-rTW\\values-zh-rTW.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,136,236,305,373,442,517,604,709,790,883,968,1082,1142",
-                        "endColumns": "80,99,68,67,68,74,86,104,80,92,84,113,59,64",
-                        "endOffsets": "131,231,300,368,437,512,599,704,785,878,963,1077,1137,1202"
-                    },
-                    "to": {
-                        "startLines": "47,48,49,50,51,52,53,54,55,56,57,58,59,60",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "4979,5060,5160,5229,5297,5366,5441,5528,5633,5714,5807,5892,6006,6066",
-                        "endColumns": "80,99,68,67,68,74,86,104,80,92,84,113,59,64",
-                        "endOffsets": "5055,5155,5224,5292,5361,5436,5523,5628,5709,5802,5887,6001,6061,6126"
                     }
                 },
                 {
