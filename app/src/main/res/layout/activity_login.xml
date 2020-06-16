@@ -13,90 +13,104 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:gravity="center"
             android:padding="30dp">
 
             <ImageView
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="80dp"
                 app:srcCompat="@drawable/logo_login"
                 android:contentDescription="@string/DescripcionImaen"
                 tools:ignore="VectorDrawableCompat" />
 
-            <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/correoE1"
-                android:layout_marginTop="15dp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:errorEnabled="true"
-                >
-                
-                <EditText
-                    android:id="@+id/correoE"
-                    android:textSize="20sp"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="@string/edt_CorreoElectronico"
-                    android:backgroundTint="@color/color_edt"
-                    android:inputType="textEmailAddress"
-                    android:autofillHints=""
-                    android:nextFocusUp="@id/correoE"
-                    android:nextFocusLeft="@id/correoE"/>
-
-            </com.google.android.material.textfield.TextInputLayout>
-
-            <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/password1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                app:errorEnabled="true"
-                app:passwordToggleEnabled="true">
-
-                <EditText
-                    android:id="@+id/password"
-                    android:textSize="20sp"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="@string/edt_Contraseña"
-                    android:backgroundTint="@color/color_edt"
-                    android:inputType="textPassword"
-                    android:autofillHints=""
-                    android:nextFocusUp="@id/password"
-                    android:nextFocusLeft="@id/password"/>
-
-            </com.google.android.material.textfield.TextInputLayout>
-
             <TextView
-                android:id="@+id/recuperarClave"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textStyle="bold"
-                android:textColor="@color/color_azul"
-                android:textSize="16sp"
-                android:text="@string/tv_RecuperarContraseña"
-                android:layout_gravity="end" />
+                android:text="Hola, bienvenido de nuevo"
+                android:textSize="30sp"
+                android:textColor="#000"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Inicia sesión para continuar"
+                android:textSize="18sp"/>
 
-            <Button
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@drawable/btn_login"
-                android:text="@string/btn_IniciarSesion"
-                android:textColor="@color/textWhite"
-                android:textSize="20sp"
-                android:onClick="confirmarInicio"
-                android:layout_marginTop="15dp"/>
+                android:orientation="vertical">
 
-            <Button
-                android:id="@+id/register"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@drawable/btn_cuenta"
-                android:textColor="#4CAF50"
-                android:layout_marginTop="15dp"
-                android:text="@string/btn_CrearCuenta"
-                android:onClick="moveRegistrar"
-                android:textSize="20sp"/>
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/correoE"
+                    android:layout_marginTop="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:errorEnabled="true"
+                    android:nextFocusUp="@id/correoE"
+                    android:nextFocusLeft="@id/correoE">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/edt_CorreoElectronico"
+                        android:backgroundTint="@color/color_edt"
+                        android:inputType="textEmailAddress"
+                        android:autofillHints="" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    app:errorEnabled="true"
+                    app:passwordToggleEnabled="true"
+                    android:nextFocusUp="@id/password"
+                    android:nextFocusLeft="@id/password">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/edt_Contraseña"
+                        android:backgroundTint="@color/color_edt"
+                        android:inputType="textPassword"
+                        android:autofillHints="" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <TextView
+                    android:id="@+id/recuperarClave"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textColor="@color/color_azul"
+                    android:textSize="16sp"
+                    android:text="@string/tv_RecuperarContraseña"
+                    android:layout_gravity="end" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btn_login"
+                    android:text="@string/btn_IniciarSesion"
+                    android:textColor="@color/textWhite"
+                    android:textSize="20sp"
+                    android:onClick="confirmarInicio"
+                    android:layout_marginTop="15dp"/>
+
+                <Button
+                    android:id="@+id/register"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btn_cuenta"
+                    android:textColor="#4CAF50"
+                    android:layout_marginTop="15dp"
+                    android:text="@string/btn_CrearCuenta"
+                    android:onClick="moveRegistrar"
+                    android:textSize="20sp"/>
+
+            </LinearLayout>
 
         </LinearLayout>
 

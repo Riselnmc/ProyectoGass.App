@@ -4,9 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".CambiarCorreoActivity"
-    android:focusable="true"
-    android:focusableInTouchMode="true">
+    tools:context=".CambiarClaveActivity">
 
     <LinearLayout
         android:id="@+id/layoutToolbar"
@@ -31,17 +29,13 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_marginStart="-10dp"
-        android:layout_marginLeft="-10dp"
-        android:layout_marginEnd="-10dp"
-        android:layout_marginRight="-10dp"
-        android:paddingStart="20dp"
         android:paddingLeft="20dp"
         android:paddingRight="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/layoutToolbar">
+        app:layout_constraintTop_toBottomOf="@+id/layoutToolbar"
+        android:paddingStart="20dp">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -51,56 +45,89 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/msj_IngresarCorreo"
                 android:textColor="#000"
+                android:textStyle="bold"
                 android:textSize="24sp"
-                android:textStyle="bold" />
+                android:text="Cambiar contraseña"/>
 
             <TextView
                 android:id="@+id/correoVinculado"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:textSize="16sp"
                 android:layout_marginTop="5dp"
-                android:text="@string/msj_CorreoActivo"
-                android:textSize="16sp" />
+                android:text="Se recomienda usar una contraseña segura que no uses en ningún otro sitio."/>
 
             <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/cambiarCorreo"
+                android:id="@+id/claveActual"
+                android:layout_marginTop="15dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="15dp"
                 app:errorEnabled="true"
-                android:nextFocusUp="@id/cambiarCorreo"
-                android:nextFocusLeft="@id/cambiarCorreo">
+                app:passwordToggleEnabled="true">
 
-                <EditText
+                <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:autofillHints=""
+                    android:hint="Contraseña actual"
                     android:backgroundTint="@color/color_edt"
-                    android:hint="@string/edt_CorreoElectronico"
-                    android:inputType="textEmailAddress" />
+                    android:inputType="textPassword"
+                    android:autofillHints="" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/claveNueva"
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:errorEnabled="true"
+                app:passwordToggleEnabled="true">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Nueva contraseña"
+                    android:backgroundTint="@color/color_edt"
+                    android:inputType="textPassword"
+                    android:autofillHints="" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/confirmarClaveNueva"
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:errorEnabled="true"
+                app:passwordToggleEnabled="true">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Confimar contraseña"
+                    android:backgroundTint="@color/color_edt"
+                    android:inputType="textPassword"
+                    android:autofillHints="" />
 
             </com.google.android.material.textfield.TextInputLayout>
 
             <Button
-                android:id="@+id/actualizarCorreo"
+                android:id="@+id/actualizarClave"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:background="@drawable/btn_login"
+                android:layout_marginTop="15dp"
                 android:text="@string/btn_VerificarNuevoCorreo"
+                android:textSize="20sp"
                 android:textColor="#fff"
-                android:textStyle="bold"
-                android:textSize="20sp" />
+                android:background="@drawable/btn_login"/>
 
             <TextView
+                android:layout_marginTop="10dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:text="Nota: Al cambiar tu dirección de correo electrónico debes volverlo a verificar"
-                android:textSize="16sp" />
-
+                android:textSize="16sp"
+                android:text="Nota: después de cambiar tu contraseña debes volver a iniciar sesión."/>
         </LinearLayout>
 
     </ScrollView>

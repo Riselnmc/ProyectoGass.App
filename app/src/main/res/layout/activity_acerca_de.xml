@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AcercaDeActivity">
+
+    <LinearLayout
+        android:id="@+id/layoutToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@color/textWhite"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:elevation="1dp"
+        android:outlineProvider="bounds">
+
+        <ImageView
+            android:id="@+id/Imgvolver"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/volver"
+            android:contentDescription="@string/DescripcionImaen"/>
+
+        <TextView
+            android:id="@+id/textTile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:text="@string/Ac_AcercaDe"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layoutToolbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="24sp"
+                android:textColor="#000"
+                android:text="Gass.App"
+                android:textStyle="bold"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Es una aplicación que quiere ayudarle a los usuarios a encontrar la información de las estaciones de gasolina en la ciudad de Bello"
+                android:textSize="16sp"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

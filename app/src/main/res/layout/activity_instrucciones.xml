@@ -6,9 +6,36 @@
     android:layout_height="match_parent"
     tools:context=".InstruccionesActivity">
 
-    <TextView
-        android:id="@+id/tv_Siguiente"
+    <Button
+        android:id="@+id/btn_Siguiente"
         android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="15dp"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:textSize="12sp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/btn_cuenta"/>
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/contenedorInstrucciones"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:id="@+id/indicador"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="TextView" />
+        android:orientation="horizontal"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:padding="15dp"
+        app:layout_constraintBottom_toBottomOf="@id/btn_Siguiente"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/btn_Siguiente"
+        app:layout_constraintTop_toTopOf="@id/btn_Siguiente"/>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

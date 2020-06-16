@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+<!-- Contenedor principal -->
+<androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -9,30 +10,47 @@
     android:background="#fff"
     tools:context=".MainActivity">
 
-    <LinearLayout
+    <!-- Logo para el splash -->
+    <ImageView
+        android:id="@+id/logoSplash"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:gravity="center"
-        android:padding="20dp"
-        tools:ignore="UseCompoundDrawables">
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:contentDescription="@string/DescripcionImaen"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo_splash"
+        tools:ignore="VectorDrawableCompat" />
 
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:contentDescription="@string/DescripcionImaen"
-            app:srcCompat="@drawable/logo_splash"
-            tools:ignore="VectorDrawableCompat" />
-
-    </LinearLayout>
-
+    <!-- TextView para mostrar nombre de la aplicación-->
     <TextView
+        android:id="@+id/nombreAplicativo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/tv_Version"
-        android:layout_centerInParent="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="20dp"
-        android:textSize="16sp"/>
+        android:layout_marginTop="8dp"
+        android:fontFamily="sans-serif"
+        android:text="Gass.App"
+        android:textSize="60sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logoSplash" />
 
-</RelativeLayout>
+    <!-- TextView para mostrar la versión de la aplicación -->
+    <TextView
+        android:id="@+id/version"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="Versión 1.0.0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

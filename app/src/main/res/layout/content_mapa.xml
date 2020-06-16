@@ -73,10 +73,10 @@
         android:background="@color/color_verde"/>
 
     <ImageButton
-        android:id="@+id/mar"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        mapbox:srcCompat="@drawable/ic_marcador"
+        android:id="@+id/volverPosicion"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_position"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"

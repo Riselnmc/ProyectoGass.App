@@ -95,6 +95,7 @@
                 android:padding="20dp"
                 android:layout_marginTop="1dp"
                 android:orientation="vertical"
+                android:elevation="1dp"
                 android:background="#fff">
 
                 <TextView
@@ -160,6 +161,7 @@
                 android:background="@color/color_edt"/>
 
             <LinearLayout
+                android:id="@+id/moveCambiarClave"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:padding="20dp"

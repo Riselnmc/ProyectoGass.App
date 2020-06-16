@@ -52,35 +52,58 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textStyle="bold"
-            android:textSize="16sp"
-            android:layout_marginTop="2dp"
+            android:textSize="20sp"
+            android:layout_marginTop="10dp"
             android:text="Nombre estación"/>
+
         <TextView
             android:id="@+id/tvNameEstacion"
             android:layout_width="wrap_content"
-            android:layout_height="match_parent"/>
+            android:layout_height="match_parent"
+            android:textColor="#000"/>
+
         <TextView
-            android:layout_marginTop="2dp"
+            android:layout_marginTop="5dp"
             android:textStyle="bold"
-            android:textSize="16sp"
+            android:textSize="20sp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Dirección"/>
+
         <TextView
             android:id="@+id/tvDireccionEstacion"
             android:layout_width="wrap_content"
-            android:layout_height="match_parent"/>
+            android:layout_height="match_parent"
+            android:textColor="#000"/>
+
         <TextView
-            android:layout_marginTop="2dp"
+            android:layout_marginTop="5dp"
             android:textStyle="bold"
-            android:textSize="16sp"
+            android:textSize="20sp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Teléfono"/>
+
         <TextView
             android:id="@+id/tvTelefonoEstacion"
             android:layout_width="wrap_content"
-            android:layout_height="match_parent"/>
+            android:layout_height="match_parent"
+            android:textColor="#000"/>
+
+        <View
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/color_edt"/>
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Servicios"
+            android:textSize="22sp"
+            android:textColor="#000"
+            android:textStyle="bold"/>
 
     </LinearLayout>
 

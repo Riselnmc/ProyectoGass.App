@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_gravity="center_horizontal"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        tools:ignore="UseCompoundDrawables"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/sin_verificar"
+            android:contentDescription="@string/DescripcionImaen" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:textSize="24sp"
+            android:text="Advertencia"
+            android:layout_marginStart="10dp"
+            android:textStyle="bold"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="10dp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:padding="10dp"
+        android:text="Lo sentimos, su cuenta ha sido eliminada"
+        android:gravity="center"/>
+
+        <Button
+            android:id="@+id/btn_cerrar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Cerrar"
+            android:background="@color/color_verde"
+            android:textColor="@color/textWhite"/>
+
+</LinearLayout>
