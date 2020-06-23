@@ -10,6 +10,13 @@
     <!-- Texto para el Toolbar del activity -->
     <string name="Ac_AgregarTarjeta">Agregar Tarjeta</string>
     <string name="Ac_InformacionEstacion">Información estación</string>
+    <string name="Ac_AcercaDe">Acerca de</string>
+    <string name="Ac_Terminos">Terminos y condiciones</string>
+    <string name="Ac_Historial">Historial</string>
+    <string name="Ac_CrearCuenta">Crear cuenta</string>
+    <string name="Ac_MisTarjetas">Mis tarjetas</string>
+    <string name="Ac_Perfil">Perfil</string>
+    <string name="Ac_EstacionesServicio">Estaciones de servicio</string>
 
     <!-- Textos para los TextView -->
     <string name="tv_NumeroTarjeta">**** **** **** 1234</string>
@@ -17,6 +24,16 @@
     <string name="tv_Fecha">Vence: 00/00</string>
     <string name="tv_RecuperarContraseña">Recuperar contraseña</string>
     <string name="tv_EliminarCuenta">Eliminar cuenta actual</string>
+    <string name="tv_Bienvenido">Bienvenido</string>
+    <string name="tv_Version">Versión 1.0.0</string>
+    <string name="tv_DatosPersonales">Datos personales</string>
+    <string name="tv_nombre">Nombre</string>
+    <string name="tv_Apellidos">Apellidos</string>
+    <string name="tv_CambiarTelefono">Cambiar número de teléfono</string>
+    <string name="tv_CambiarContraseña">Cambiar contraseña</string>
+    <string name="tv_NombreEstacion">Nombre estación</string>
+    <string name="tv_Direccion">Dirección</string>
+    <string name="tv_Distancia">A: 5km</string>
 
     <!-- Texto para los EditText -->
     <string name="edt_NumeroTarjeta">Número tarjeta</string>
@@ -26,13 +43,19 @@
     <string name="edt_Clave">Clave</string>
     <string name="edt_CorreoElectronico">Correo Electronico</string>
     <string name="edt_Contraseña">Contraseña</string>
+    <string name="edt_ConfirmarContraseña">Confirmar contraseña</string>
+    <string name="edt_Telefono">Teléfono</string>
 
-    <!-- Textos para los botones -->
+    <!-- Texto para los botones -->
     <string name="btn_Escanear">Escanear tarjeta</string>
     <string name="btn_VerificarNuevoCorreo">Verificar</string>
     <string name="btn_EliminarCuenta">Eliminar cuenta</string>
     <string name="btn_IniciarSesion">Iniciar sesión</string>
     <string name="btn_CrearCuenta">Crear cuenta</string>
+    <string name="btn_Registrarme">Registrarme</string>
+    <string name="btn_RestablecerContraseña">Restablecer contraseña</string>
+    <string name="btn_EncontrarEstaciones">Encontrar estaciones</string>
+    <string name="btn_enviar">Enviar</string>
 
     <!-- Texto de información-->
     <string name="msj_IngresarCorreo">Ingresa tu correo electrónico nuevo</string>
@@ -40,30 +63,6 @@
     <string name="msj_TextoEliminar">¿Deseas eliminar la cuenta de Gass.App vinculada al correo ?</string>
     <string name="msj_TextoEliminar1">Si eliminas tu cuenta, no podrás iniciar sesión y/o utilizar los servicios de Gass.App. Además, la información personal vinculada a tu cuenta será anonimizada e irrecuperable.</string>
     <string name="msj_TextoPedirClave">Debes ingresar la contraseña actual para verificar tu cuenta.</string>
-    <string name="Ac_EstacionesServicio">Estaciones de servicio</string>
-    <string name="tv_Bienvenido">Bienvenido</string>
-    <string name="tv_Version">Versión 1.0.0</string>
-    <string name="Ac_Perfil">Perfil</string>
-    <string name="tv_DatosPersonales">Datos personales</string>
-    <string name="tv_nombre">Nombre</string>
-    <string name="tv_Apellidos">Apellidos</string>
-    <string name="tv_CambiarTelefono">Cambiar número de teléfono</string>
-    <string name="tv_CambiarContraseña">Cambiar contraseña</string>
-    <string name="Ac_CrearCuenta">Crear cuenta</string>
-    <string name="edt_ConfirmarContraseña">Confirmar contraseña</string>
-    <string name="edt_Telefono">Teléfono</string>
-    <string name="btn_Registrarme">Registrarme</string>
-    <string name="btn_RestablecerContraseña">Restablecer contraseña</string>
-    <string name="Ac_MisTarjetas">Mis tarjetas</string>
-    <string name="btn_EncontrarEstaciones">Encontrar estaciones</string>
-    <string name="tv_NombreEstacion">Nombre estación</string>
-    <string name="tv_Direccion">Dirección</string>
-    <string name="tv_Distancia">A: 5km</string>
     <string name="cerrarSesion">Cerrar sesión</string>
-    <string name="Ac_AcercaDe">Acerca de</string>
-    <string name="Ac_Terminos">Terminos y condiciones</string>
-    <string name="Ac_Historial">Historial</string>
-    <string name="btn_enviar">Enviar</string>
-
 
 </resources>

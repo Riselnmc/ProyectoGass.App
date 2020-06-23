@@ -11,7 +11,6 @@
         android:id="@+id/tv_nombreEstacion"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Esso"
         android:textSize="18sp"
         android:textColor="#000"
         android:layout_margin="15dp"
@@ -21,10 +20,10 @@
         android:id="@+id/tv_direccionEstacion"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Oelo"
         android:layout_marginLeft="15dp"
         android:layout_marginBottom="15dp"
-        android:textSize="16sp"/>
+        android:textSize="16sp"
+        android:layout_marginStart="15dp" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -32,18 +31,15 @@
         android:orientation="horizontal">
 
         <Button
-            android:id="@+id/btn_verEstacion"
+            android:id="@+id/btnCerrar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@color/textWhite"
-            android:drawableLeft="@drawable/ic_ver_estacion"
             android:paddingLeft="5dp"
-            android:text="Ver estación"
+            android:text="Cerrar"
+            android:background="@color/textWhite"
             android:textColor="@color/color_verde"
-            android:textStyle="bold"
-            android:drawableStart="@drawable/ic_ver_estacion"
-            tools:ignore="ButtonStyle" />
+            android:textStyle="bold" />
 
         <Button
             android:id="@+id/btn_generarRuta"
@@ -51,12 +47,10 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:background="@color/color_verde"
-            android:drawableLeft="@drawable/ic_rutas"
             android:paddingLeft="5dp"
             android:text="Generar ruta"
             android:textColor="@color/textWhite"
-            android:textStyle="bold"
-            android:drawableStart="@drawable/ic_rutas" />
+            android:textStyle="bold" />
 
     </LinearLayout>
 

@@ -56,7 +56,7 @@
                     android:layout_height="wrap_content"
                     app:errorEnabled="true">
 
-                    <EditText
+                    <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/txtNombres"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -74,7 +74,7 @@
                     android:layout_height="wrap_content"
                     app:errorEnabled="true">
 
-                    <EditText
+                    <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/txtApellidos"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -92,7 +92,7 @@
                     android:layout_height="wrap_content"
                     app:errorEnabled="true">
 
-                    <EditText
+                    <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/txtCorreo"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -111,7 +111,7 @@
                     app:errorEnabled="true"
                     app:passwordToggleEnabled="true">
 
-                    <EditText
+                    <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/txtPassword"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -130,7 +130,7 @@
                     app:errorEnabled="true"
                     app:passwordToggleEnabled="true">
 
-                    <EditText
+                    <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/txtPasswordConfirm"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -148,14 +148,15 @@
                     android:layout_height="wrap_content"
                     app:errorEnabled="true">
 
-                    <EditText
+                    <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/txtTel"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:autofillHints=""
                         android:backgroundTint="@color/color_edt"
                         android:hint="@string/edt_Telefono"
-                        android:inputType="number|phone" />
+                        android:inputType="number|phone"
+                        android:maxLength="10" />
 
                 </com.google.android.material.textfield.TextInputLayout>
 

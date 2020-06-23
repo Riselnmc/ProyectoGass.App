@@ -4,32 +4,44 @@
         "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\usuario.png"
     },
     {
-        "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_volver.png.flat",
-        "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\volver.png"
+        "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_item_instrucciones.xml.flat",
+        "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\src\\main\\res\\layout\\item_instrucciones.xml"
     },
     {
-        "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_pregunta.png.flat",
-        "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\ic_pregunta.png"
+        "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_item_list_servicios.xml.flat",
+        "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\src\\main\\res\\layout\\item_list_servicios.xml"
+    },
+    {
+        "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_volver.png.flat",
+        "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\volver.png"
     },
     {
         "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher.png.flat",
         "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
     },
     {
-        "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_tarjetas.xml.flat",
-        "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\src\\main\\res\\layout\\activity_tarjetas.xml"
+        "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_eliminar.png.flat",
+        "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_eliminar.png"
+    },
+    {
+        "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_ruta.png.flat",
+        "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_ruta.png"
     },
     {
         "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_ic_launcher_background.png.flat",
         "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_launcher_background.png"
     },
     {
-        "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_logo_splash.png.flat",
-        "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\logo_splash.png"
+        "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_item_alert_advertencia.xml.flat",
+        "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\src\\main\\res\\layout\\item_alert_advertencia.xml"
     },
     {
-        "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher_round.png.flat",
-        "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.png"
+        "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_buscador.png.flat",
+        "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_buscador.png"
+    },
+    {
+        "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_logo_splash.png.flat",
+        "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\logo_splash.png"
     },
     {
         "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21_ic_menu.xml.flat",
@@ -40,24 +52,24 @@
         "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\logo_app_foreground.png"
     },
     {
+        "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_position.png.flat",
+        "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\ic_position.png"
+    },
+    {
         "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_login.xml.flat",
         "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\src\\main\\res\\layout\\activity_login.xml"
-    },
-    {
-        "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_menu.png.flat",
-        "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\ic_menu.png"
-    },
-    {
-        "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_detalle_estacion.xml.flat",
-        "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\src\\main\\res\\layout\\activity_detalle_estacion.xml"
     },
     {
         "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_location.png.flat",
         "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\ic_location.png"
     },
     {
-        "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_logo_app_foreground.png.flat",
-        "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\src\\main\\res\\mipmap-hdpi\\logo_app_foreground.png"
+        "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_rutas.png.flat",
+        "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\ic_rutas.png"
+    },
+    {
+        "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_eliminar.png.flat",
+        "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\ic_eliminar.png"
     },
     {
         "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_header.xml.flat",
@@ -76,48 +88,44 @@
         "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\src\\main\\res\\mipmap-anydpi-v26\\logo_app.xml"
     },
     {
-        "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_logo_app_round.xml.flat",
-        "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\src\\main\\res\\mipmap-anydpi-v26\\logo_app_round.xml"
-    },
-    {
-        "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher_round.png.flat",
-        "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.png"
+        "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_cambiar_clave.xml.flat",
+        "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\src\\main\\res\\layout\\activity_cambiar_clave.xml"
     },
     {
         "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_ic_magnifying_glass.png.flat",
         "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_magnifying_glass.png"
     },
     {
-        "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_logo_login.png.flat",
-        "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\logo_login.png"
-    },
-    {
-        "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_logo_splash.png.flat",
-        "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\logo_splash.png"
+        "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.png"
     },
     {
         "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21_logo_app_foreground.xml.flat",
         "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\logo_app_foreground.xml"
     },
     {
-        "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21_ic_launcher_background.xml.flat",
-        "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_launcher_background.xml"
-    },
-    {
-        "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_logo_login.png.flat",
-        "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\logo_login.png"
+        "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_buscador.png.flat",
+        "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\ic_buscador.png"
     },
     {
         "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_logo_app_foreground.png.flat",
         "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\src\\main\\res\\mipmap-xhdpi\\logo_app_foreground.png"
     },
     {
+        "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_indicador_activado.xml.flat",
+        "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\src\\main\\res\\drawable\\indicador_activado.xml"
+    },
+    {
         "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_registrar.xml.flat",
         "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\src\\main\\res\\layout\\activity_registrar.xml"
     },
     {
-        "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_logo_app.png.flat",
-        "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\src\\main\\res\\mipmap-xxhdpi\\logo_app.png"
+        "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_ver_estacion.png.flat",
+        "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\ic_ver_estacion.png"
+    },
+    {
+        "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_registro_exitoso.png.flat",
+        "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\ic_registro_exitoso.png"
     },
     {
         "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_magnifying_glass.png.flat",
@@ -136,6 +144,14 @@
         "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\logo_splash.png"
     },
     {
+        "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_eliminar.png.flat",
+        "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\ic_eliminar.png"
+    },
+    {
+        "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_ruta.png.flat",
+        "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_ruta.png"
+    },
+    {
         "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_menu.png.flat",
         "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_menu.png"
     },
@@ -144,20 +160,12 @@
         "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\ic_magnifying_glass.png"
     },
     {
-        "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_logo_app_foreground.png.flat",
-        "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\logo_app_foreground.png"
-    },
-    {
         "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_launcher_background.png.flat",
         "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\ic_launcher_background.png"
     },
     {
-        "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_main.xml.flat",
-        "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\src\\main\\res\\layout\\activity_main.xml"
-    },
-    {
-        "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_btn_scanear.xml.flat",
-        "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\src\\main\\res\\drawable\\btn_scanear.xml"
+        "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_eliminar.png.flat",
+        "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_eliminar.png"
     },
     {
         "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_marcador.png.flat",
@@ -172,48 +180,28 @@
         "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_magnifying_glass.png"
     },
     {
+        "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_item_alert_informacion.xml.flat",
+        "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\src\\main\\res\\layout\\item_alert_informacion.xml"
+    },
+    {
         "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_logo_app_foreground.png.flat",
         "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\logo_app_foreground.png"
     },
     {
-        "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_logout.png.flat",
-        "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\src\\main\\res\\drawable\\logout.png"
+        "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_ic_registro_exitoso.png.flat",
+        "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_registro_exitoso.png"
     },
     {
-        "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_logo_splash.png.flat",
-        "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\logo_splash.png"
-    },
-    {
-        "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_logo_login.png.flat",
-        "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\logo_login.png"
-    },
-    {
-        "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_item_list_tarjetas.xml.flat",
-        "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\src\\main\\res\\layout\\item_list_tarjetas.xml"
+        "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_registro_exitoso.png.flat",
+        "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\ic_registro_exitoso.png"
     },
     {
         "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_usuario.png.flat",
         "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\usuario.png"
     },
     {
-        "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_usuario.png.flat",
-        "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\usuario.png"
-    },
-    {
-        "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_instrucciones.xml.flat",
-        "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\src\\main\\res\\layout\\activity_instrucciones.xml"
-    },
-    {
         "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_volver.png.flat",
         "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\volver.png"
-    },
-    {
-        "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_logo_login.png.flat",
-        "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\logo_login.png"
-    },
-    {
-        "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_logo_login.png.flat",
-        "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\logo_login.png"
     },
     {
         "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_logo_login.png.flat",
@@ -224,28 +212,12 @@
         "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\ic_menu.png"
     },
     {
-        "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_perfil.png.flat",
-        "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\src\\main\\res\\drawable\\perfil.png"
-    },
-    {
-        "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21_ic_pregunta.xml.flat",
-        "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_pregunta.xml"
-    },
-    {
-        "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_pregunta.png.flat",
-        "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_pregunta.png"
+        "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_verificado.png.flat",
+        "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\src\\main\\res\\drawable\\verificado.png"
     },
     {
         "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_logo_splash.png.flat",
         "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\logo_splash.png"
-    },
-    {
-        "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_launcher_background.png.flat",
-        "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\ic_launcher_background.png"
-    },
-    {
-        "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_chip.png.flat",
-        "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\src\\main\\res\\drawable\\chip.png"
     },
     {
         "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_mastercard.png.flat",
@@ -256,60 +228,16 @@
         "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\src\\main\\res\\mipmap-xhdpi\\logo_app.png"
     },
     {
-        "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_logo_splash.png.flat",
-        "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\logo_splash.png"
-    },
-    {
-        "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_eliminar_cuenta.xml.flat",
-        "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\src\\main\\res\\layout\\activity_eliminar_cuenta.xml"
-    },
-    {
         "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_location.png.flat",
         "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\ic_location.png"
-    },
-    {
-        "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_logo_app_foreground.png.flat",
-        "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\logo_app_foreground.png"
-    },
-    {
-        "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_launcher_background.png.flat",
-        "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_launcher_background.png"
     },
     {
         "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_logo_app_foreground.png.flat",
         "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\logo_app_foreground.png"
     },
     {
-        "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_historial.png.flat",
-        "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\src\\main\\res\\drawable\\historial.png"
-    },
-    {
-        "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21_volver.xml.flat",
-        "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\volver.xml"
-    },
-    {
-        "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_terminos.png.flat",
-        "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\src\\main\\res\\drawable\\terminos.png"
-    },
-    {
-        "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_logo_app.png.flat",
-        "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\src\\main\\res\\mipmap-hdpi\\logo_app.png"
-    },
-    {
-        "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_check.png.flat",
-        "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\src\\main\\res\\drawable\\check.png"
-    },
-    {
-        "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_agregar_tarjeta.xml.flat",
-        "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\src\\main\\res\\layout\\activity_agregar_tarjeta.xml"
-    },
-    {
-        "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_logo_app_foreground.png.flat",
-        "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\logo_app_foreground.png"
-    },
-    {
-        "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_mastercard.png.flat",
-        "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_mastercard.png"
+        "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_ruta.png.flat",
+        "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\ic_ruta.png"
     },
     {
         "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher.png.flat",
@@ -320,20 +248,12 @@
         "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\src\\main\\res\\layout\\activity_mapa.xml"
     },
     {
-        "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_ic_launcher_foreground.xml.flat",
-        "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\src\\main\\res\\drawable-v24\\ic_launcher_foreground.xml"
-    },
-    {
-        "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21_ic_location.xml.flat",
-        "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_location.xml"
+        "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_rutas.png.flat",
+        "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_rutas.png"
     },
     {
         "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_cambiar_correo.xml.flat",
         "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\src\\main\\res\\layout\\activity_cambiar_correo.xml"
-    },
-    {
-        "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_location.png.flat",
-        "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_location.png"
     },
     {
         "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_boton_circular.xml.flat",
@@ -344,32 +264,28 @@
         "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_magnifying_glass.xml"
     },
     {
-        "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_menu.png.flat",
-        "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\ic_menu.png"
-    },
-    {
-        "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_ic_location.png.flat",
-        "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_location.png"
+        "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_buscador.png.flat",
+        "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_buscador.png"
     },
     {
         "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_logo_app_foreground.png.flat",
         "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\src\\main\\res\\mipmap-xxhdpi\\logo_app_foreground.png"
     },
     {
+        "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_ic_location.png.flat",
+        "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_location.png"
+    },
+    {
         "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_estaciones.xml.flat",
         "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\src\\main\\res\\layout\\activity_estaciones.xml"
     },
     {
-        "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_logo_app_round.png.flat",
-        "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\src\\main\\res\\mipmap-xxxhdpi\\logo_app_round.png"
+        "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_indicador_desactivado.xml.flat",
+        "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\src\\main\\res\\drawable\\indicador_desactivado.xml"
     },
     {
         "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher.png.flat",
         "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
-    },
-    {
-        "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_btn_login.xml.flat",
-        "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\src\\main\\res\\drawable\\btn_login.xml"
     },
     {
         "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_logo_app_round.png.flat",
@@ -388,100 +304,52 @@
         "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\src\\main\\res\\drawable\\tarjeta.png"
     },
     {
-        "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_menu.png.flat",
-        "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_menu.png"
+        "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21_ic_buscador.xml.flat",
+        "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_buscador.xml"
     },
     {
-        "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_mastercard.png.flat",
-        "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\ic_mastercard.png"
+        "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_ruta.png.flat",
+        "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\ic_ruta.png"
     },
     {
         "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_pregunta.png.flat",
         "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_pregunta.png"
     },
     {
-        "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_ic_pregunta.png.flat",
-        "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_pregunta.png"
-    },
-    {
         "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_item_list_estaciones.xml.flat",
         "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\src\\main\\res\\layout\\item_list_estaciones.xml"
-    },
-    {
-        "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher_round.xml"
     },
     {
         "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_pregunta.png.flat",
         "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\ic_pregunta.png"
     },
     {
-        "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher.xml"
-    },
-    {
         "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher_round.png.flat",
         "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.png"
     },
     {
-        "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21_logo_splash.xml.flat",
-        "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\logo_splash.xml"
-    },
-    {
-        "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_ic_mastercard.png.flat",
-        "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_mastercard.png"
-    },
-    {
-        "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_pregunta.png.flat",
-        "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\ic_pregunta.png"
-    },
-    {
-        "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_logo_app_round.png.flat",
-        "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\src\\main\\res\\mipmap-xxhdpi\\logo_app_round.png"
-    },
-    {
-        "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_content_mapa.xml.flat",
-        "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\src\\main\\res\\layout\\content_mapa.xml"
+        "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21_ic_eliminar.xml.flat",
+        "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_eliminar.xml"
     },
     {
         "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_usuario.png.flat",
         "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\usuario.png"
     },
     {
-        "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_btn_cuenta.xml.flat",
-        "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\src\\main\\res\\drawable\\btn_cuenta.xml"
+        "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\anim_animacion_abajo.xml.flat",
+        "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\src\\main\\res\\anim\\animacion_abajo.xml"
     },
     {
         "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_mastercard.png.flat",
         "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\ic_mastercard.png"
     },
     {
-        "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_usuario.png.flat",
-        "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\usuario.png"
-    },
-    {
         "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_volver.png.flat",
         "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\volver.png"
     },
     {
-        "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher.png.flat",
-        "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
-    },
-    {
-        "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_volver.png.flat",
-        "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\volver.png"
-    },
-    {
-        "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_logo_app_round.png.flat",
-        "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\src\\main\\res\\mipmap-mdpi\\logo_app_round.png"
-    },
-    {
-        "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_mastercard.png.flat",
-        "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_mastercard.png"
-    },
-    {
-        "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_perfil.xml.flat",
-        "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\src\\main\\res\\layout\\activity_perfil.xml"
+        "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21_ic_registro_exitoso.xml.flat",
+        "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_registro_exitoso.xml"
     },
     {
         "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_logo_app_foreground.png.flat",
@@ -504,28 +372,36 @@
         "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\src\\main\\res\\mipmap-xxxhdpi\\logo_app.png"
     },
     {
+        "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_ruta.png.flat",
+        "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\ic_ruta.png"
+    },
+    {
         "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_agregar.png.flat",
         "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\src\\main\\res\\drawable\\agregar.png"
     },
     {
-        "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21_ic_mastercard.xml.flat",
-        "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_mastercard.xml"
+        "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_position.png.flat",
+        "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\ic_position.png"
+    },
+    {
+        "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_buscador.png.flat",
+        "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\ic_buscador.png"
     },
     {
         "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21_logo_login.xml.flat",
         "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\logo_login.xml"
     },
     {
+        "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_ver_estacion.png.flat",
+        "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\ic_ver_estacion.png"
+    },
+    {
         "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_logo_app_round.png.flat",
         "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\src\\main\\res\\mipmap-hdpi\\logo_app_round.png"
     },
     {
-        "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_magnifying_glass.png.flat",
-        "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\ic_magnifying_glass.png"
-    },
-    {
-        "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_logo_app_foreground.png.flat",
-        "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\src\\main\\res\\mipmap-xxxhdpi\\logo_app_foreground.png"
+        "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_rutas.png.flat",
+        "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\ic_rutas.png"
     },
     {
         "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_volver.png.flat",
@@ -536,27 +412,407 @@
         "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_launcher_background.png"
     },
     {
-        "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_usuario.png.flat",
-        "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\usuario.png"
-    },
-    {
         "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher_round.png.flat",
         "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.png"
     },
     {
-        "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_volver.png.flat",
-        "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\volver.png"
+        "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_position.png.flat",
+        "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_position.png"
     },
     {
         "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher.png.flat",
         "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
     },
     {
-        "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_launcher_background.png.flat",
-        "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\ic_launcher_background.png"
-    },
-    {
         "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_acerca.png.flat",
         "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\src\\main\\res\\drawable\\acerca.png"
+    },
+    {
+        "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\anim_animacion_arriba.xml.flat",
+        "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\src\\main\\res\\anim\\animacion_arriba.xml"
+    },
+    {
+        "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_pregunta.png.flat",
+        "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\ic_pregunta.png"
+    },
+    {
+        "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_tarjetas.xml.flat",
+        "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\src\\main\\res\\layout\\activity_tarjetas.xml"
+    },
+    {
+        "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_menu.png.flat",
+        "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\ic_menu.png"
+    },
+    {
+        "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_detalle_estacion.xml.flat",
+        "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\src\\main\\res\\layout\\activity_detalle_estacion.xml"
+    },
+    {
+        "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_logo_app_foreground.png.flat",
+        "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\src\\main\\res\\mipmap-hdpi\\logo_app_foreground.png"
+    },
+    {
+        "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_registro_exitoso.png.flat",
+        "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\ic_registro_exitoso.png"
+    },
+    {
+        "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_ic_buscador.png.flat",
+        "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_buscador.png"
+    },
+    {
+        "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_logo_app_round.xml.flat",
+        "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\src\\main\\res\\mipmap-anydpi-v26\\logo_app_round.xml"
+    },
+    {
+        "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_logo_login.png.flat",
+        "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\logo_login.png"
+    },
+    {
+        "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_ic_eliminar.png.flat",
+        "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_eliminar.png"
+    },
+    {
+        "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_logo_splash.png.flat",
+        "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\logo_splash.png"
+    },
+    {
+        "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21_ic_launcher_background.xml.flat",
+        "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_launcher_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_logo_login.png.flat",
+        "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\logo_login.png"
+    },
+    {
+        "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_ver_estacion.png.flat",
+        "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\ic_ver_estacion.png"
+    },
+    {
+        "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_logo_app.png.flat",
+        "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\src\\main\\res\\mipmap-xxhdpi\\logo_app.png"
+    },
+    {
+        "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_logo_app_foreground.png.flat",
+        "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\logo_app_foreground.png"
+    },
+    {
+        "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_item_sesioncaducada.xml.flat",
+        "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\src\\main\\res\\layout\\item_sesioncaducada.xml"
+    },
+    {
+        "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21_ic_rutas.xml.flat",
+        "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_rutas.xml"
+    },
+    {
+        "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_registro_exitoso.png.flat",
+        "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_registro_exitoso.png"
+    },
+    {
+        "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\src\\main\\res\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_btn_scanear.xml.flat",
+        "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\src\\main\\res\\drawable\\btn_scanear.xml"
+    },
+    {
+        "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_logout.png.flat",
+        "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\src\\main\\res\\drawable\\logout.png"
+    },
+    {
+        "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_logo_splash.png.flat",
+        "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\logo_splash.png"
+    },
+    {
+        "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_logo_login.png.flat",
+        "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\logo_login.png"
+    },
+    {
+        "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_item_list_tarjetas.xml.flat",
+        "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\src\\main\\res\\layout\\item_list_tarjetas.xml"
+    },
+    {
+        "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_usuario.png.flat",
+        "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\usuario.png"
+    },
+    {
+        "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_ver_estacion.png.flat",
+        "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_ver_estacion.png"
+    },
+    {
+        "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_instrucciones.xml.flat",
+        "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\src\\main\\res\\layout\\activity_instrucciones.xml"
+    },
+    {
+        "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_rutas.png.flat",
+        "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\ic_rutas.png"
+    },
+    {
+        "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_logo_login.png.flat",
+        "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\logo_login.png"
+    },
+    {
+        "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_logo_login.png.flat",
+        "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\logo_login.png"
+    },
+    {
+        "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_ic_ruta.png.flat",
+        "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_ruta.png"
+    },
+    {
+        "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_terminos_y_condiciones.xml.flat",
+        "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\src\\main\\res\\layout\\activity_terminos_y_condiciones.xml"
+    },
+    {
+        "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_perfil.png.flat",
+        "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\src\\main\\res\\drawable\\perfil.png"
+    },
+    {
+        "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21_ic_ruta.xml.flat",
+        "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_ruta.xml"
+    },
+    {
+        "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21_ic_pregunta.xml.flat",
+        "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_pregunta.xml"
+    },
+    {
+        "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_pregunta.png.flat",
+        "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_pregunta.png"
+    },
+    {
+        "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_launcher_background.png.flat",
+        "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\ic_launcher_background.png"
+    },
+    {
+        "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_chip.png.flat",
+        "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\src\\main\\res\\drawable\\chip.png"
+    },
+    {
+        "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_logo_splash.png.flat",
+        "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\logo_splash.png"
+    },
+    {
+        "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_eliminar_cuenta.xml.flat",
+        "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\src\\main\\res\\layout\\activity_eliminar_cuenta.xml"
+    },
+    {
+        "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_logo_app_foreground.png.flat",
+        "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\logo_app_foreground.png"
+    },
+    {
+        "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_launcher_background.png.flat",
+        "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_launcher_background.png"
+    },
+    {
+        "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_historial.png.flat",
+        "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\src\\main\\res\\drawable\\historial.png"
+    },
+    {
+        "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21_volver.xml.flat",
+        "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\volver.xml"
+    },
+    {
+        "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_terminos.png.flat",
+        "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\src\\main\\res\\drawable\\terminos.png"
+    },
+    {
+        "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_logo_app.png.flat",
+        "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\src\\main\\res\\mipmap-hdpi\\logo_app.png"
+    },
+    {
+        "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21_ic_position.xml.flat",
+        "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_position.xml"
+    },
+    {
+        "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_buscador.png.flat",
+        "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\ic_buscador.png"
+    },
+    {
+        "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_check.png.flat",
+        "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\src\\main\\res\\drawable\\check.png"
+    },
+    {
+        "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_agregar_tarjeta.xml.flat",
+        "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\src\\main\\res\\layout\\activity_agregar_tarjeta.xml"
+    },
+    {
+        "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_logo_app_foreground.png.flat",
+        "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\logo_app_foreground.png"
+    },
+    {
+        "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_mastercard.png.flat",
+        "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_mastercard.png"
+    },
+    {
+        "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\src\\main\\res\\drawable-v24\\ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21_ic_location.xml.flat",
+        "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_location.xml"
+    },
+    {
+        "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_location.png.flat",
+        "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_location.png"
+    },
+    {
+        "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_acerca_de.xml.flat",
+        "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\src\\main\\res\\layout\\activity_acerca_de.xml"
+    },
+    {
+        "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_menu.png.flat",
+        "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\ic_menu.png"
+    },
+    {
+        "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_registro_exitoso.png.flat",
+        "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_registro_exitoso.png"
+    },
+    {
+        "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_logo_app_round.png.flat",
+        "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\src\\main\\res\\mipmap-xxxhdpi\\logo_app_round.png"
+    },
+    {
+        "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_position.png.flat",
+        "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_position.png"
+    },
+    {
+        "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_eliminar.png.flat",
+        "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\ic_eliminar.png"
+    },
+    {
+        "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_btn_login.xml.flat",
+        "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\src\\main\\res\\drawable\\btn_login.xml"
+    },
+    {
+        "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_menu.png.flat",
+        "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_menu.png"
+    },
+    {
+        "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_mastercard.png.flat",
+        "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\ic_mastercard.png"
+    },
+    {
+        "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_sin_verificar.png.flat",
+        "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\src\\main\\res\\drawable\\sin_verificar.png"
+    },
+    {
+        "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_position.png.flat",
+        "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\ic_position.png"
+    },
+    {
+        "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_ver_estacion.png.flat",
+        "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_ver_estacion.png"
+    },
+    {
+        "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_ic_pregunta.png.flat",
+        "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_pregunta.png"
+    },
+    {
+        "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+    },
+    {
+        "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher.xml"
+    },
+    {
+        "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21_logo_splash.xml.flat",
+        "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\logo_splash.xml"
+    },
+    {
+        "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_ic_mastercard.png.flat",
+        "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_mastercard.png"
+    },
+    {
+        "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21_ic_ver_estacion.xml.flat",
+        "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_ver_estacion.xml"
+    },
+    {
+        "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_pregunta.png.flat",
+        "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\ic_pregunta.png"
+    },
+    {
+        "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_logo_app_round.png.flat",
+        "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\src\\main\\res\\mipmap-xxhdpi\\logo_app_round.png"
+    },
+    {
+        "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_content_mapa.xml.flat",
+        "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\src\\main\\res\\layout\\content_mapa.xml"
+    },
+    {
+        "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_btn_cuenta.xml.flat",
+        "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\src\\main\\res\\drawable\\btn_cuenta.xml"
+    },
+    {
+        "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_usuario.png.flat",
+        "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\usuario.png"
+    },
+    {
+        "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_ic_position.png.flat",
+        "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_position.png"
+    },
+    {
+        "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_volver.png.flat",
+        "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\volver.png"
+    },
+    {
+        "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_logo_app_round.png.flat",
+        "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\src\\main\\res\\mipmap-mdpi\\logo_app_round.png"
+    },
+    {
+        "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_mastercard.png.flat",
+        "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_mastercard.png"
+    },
+    {
+        "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_rutas.png.flat",
+        "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_rutas.png"
+    },
+    {
+        "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_perfil.xml.flat",
+        "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\src\\main\\res\\layout\\activity_perfil.xml"
+    },
+    {
+        "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_cambiar_telefono.xml.flat",
+        "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\src\\main\\res\\layout\\activity_cambiar_telefono.xml"
+    },
+    {
+        "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_ic_rutas.png.flat",
+        "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_rutas.png"
+    },
+    {
+        "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21_ic_mastercard.xml.flat",
+        "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_mastercard.xml"
+    },
+    {
+        "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_ic_ver_estacion.png.flat",
+        "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_ver_estacion.png"
+    },
+    {
+        "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_magnifying_glass.png.flat",
+        "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\ic_magnifying_glass.png"
+    },
+    {
+        "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_logo_app_foreground.png.flat",
+        "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\src\\main\\res\\mipmap-xxxhdpi\\logo_app_foreground.png"
+    },
+    {
+        "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_usuario.png.flat",
+        "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\usuario.png"
+    },
+    {
+        "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_volver.png.flat",
+        "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\volver.png"
+    },
+    {
+        "merged": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_launcher_background.png.flat",
+        "source": "C:\\Users\\rinam\\Desktop\\ProyectoGassApp\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\ic_launcher_background.png"
     }
 ]

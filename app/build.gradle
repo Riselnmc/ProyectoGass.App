@@ -40,19 +40,27 @@ dependencies {
     androidTestImplementation 'androidx.test.ext:junit:1.1.1'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
 
+    implementation 'com.android.volley:volley:1.1.1'
     implementation 'com.google.android.material:material:1.1.0'
     implementation 'androidx.navigation:navigation-runtime:2.2.2'
     implementation 'androidx.navigation:navigation-ui:2.2.2'
+
+    //Implementación de librearias de mapbox
     implementation 'com.mapbox.mapboxsdk:mapbox-android-navigation:0.43.0-alpha.1'
     implementation 'com.mapbox.mapboxsdk:mapbox-android-navigation-ui:0.43.0-alpha.1'
     implementation 'com.mapbox.mapboxsdk:mapbox-android-sdk:9.2.1'
     implementation 'com.mapbox.mapboxsdk:mapbox-android-plugin-places-v9:0.12.0'
     implementation 'com.mapbox.mapboxsdk:mapbox-android-plugin-locationlayer:0.11.0'
+
+    //Implementación de librearia de animación circular
     implementation 'com.skyfishjy.ripplebackground:library:1.0.1'
+    //Implementación de librearia para escanear tarjeta de credito o debito
     implementation 'io.card:android-sdk:5.5.1'
 
+    //Implementación de librearias de firebase
     implementation 'com.google.firebase:firebase-auth:19.3.1'
     implementation 'com.google.firebase:firebase-firestore:21.4.3'
     implementation 'com.google.firebase:firebase-analytics:17.4.3'
     implementation 'com.firebaseui:firebase-ui-firestore:6.2.0'
+    implementation 'com.google.firebase:firebase-messaging:20.2.1'
 }

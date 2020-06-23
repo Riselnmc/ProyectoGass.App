@@ -1,5 +1,7 @@
+//Nombre del paquete principal
 package com.example.proyectogassapp;
 
+//Importación de librerias
 import androidx.appcompat.app.AppCompatActivity;
 import android.annotation.SuppressLint;
 import android.app.ProgressDialog;
@@ -7,62 +9,66 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.util.Patterns;
 import android.view.View;
-import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.Toast;
 import com.google.android.material.textfield.TextInputLayout;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.firestore.FirebaseFirestore;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Objects;
 
+//Creación de la clase con herencia del AppCompatActivity
 public class RegistrarActivity extends AppCompatActivity {
 
-    EditText nombres,apellidos,correo, passw,confirmPass, tele;
-    ImageView volver;
-    TextInputLayout problemaNombre,problemaApellido,problemaCorreo,problemaClave,problemaClaveC,problemaTelefono;
+    //Variables de los EditText, para la información que vamos a registrar
+    private TextInputLayout nombres,apellidos,correo, passw,confirmPass, tele;
 
-    //Variables que guardarán el valor que queremos registrar en la base de datos
+    //Variables para guardar los valores en la base de datos
     private String name = "";
     private String lastName = "";
     private String email = "";
     private String password = "";
-    private String passwordC = "";
     private String phone = "";
 
-    FirebaseAuth mAuth;
-    FirebaseFirestore db;
+    //Variable para el autenticador
+    private FirebaseAuth mAuth;
+    //Variable para la base de datos
+    private FirebaseFirestore db;
 
-    //Variable para el cuadro de progreso
-    ProgressDialog pd;
+    //Variable para el cuadro de dialogo
+    private ProgressDialog pd;
 
+    /*
+     * Ciclo de vida principal del activity
+     * Se activa cuando el sistema crea la actividad por primera vez, se ejecuta la lógica básica
+     * @SuppressLint("SetTextI18n") Permite utilizar cadenas de texto en el setText
+     */
     @SuppressLint("SetTextI18n")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        //Llamar la super clase onCreate para completar la creación de la activity
         super.onCreate(savedInstanceState);
+        //Establecer el diseño de la interfaz de usuario para esta activity
         setContentView(R.layout.activity_registrar);
 
+        //Instanciar autenticador
         mAuth = FirebaseAuth.getInstance();
+        //Instanciar base de datos
         db = FirebaseFirestore.getInstance();
+        //Instanciar cuadro de dialogo
         pd = new ProgressDialog(this);
 
-        nombres = findViewById(R.id.txtNombres);
-        apellidos = findViewById(R.id.txtApellidos);
-        correo = findViewById(R.id.txtCorreo);
-        passw = findViewById(R.id.txtPassword);
-        confirmPass = findViewById(R.id.txtPasswordConfirm);
-        tele = findViewById(R.id.txtTel);
+        //Referenciar la parte lógica con la vista
+        nombres = findViewById(R.id.txtNombres1);
+        apellidos = findViewById(R.id.txtApellidos1);
+        correo = findViewById(R.id.txtCorreo1);
+        passw = findViewById(R.id.txtPassword1);
+        confirmPass = findViewById(R.id.txtPasswordConfirm1);
+        tele = findViewById(R.id.txtTel1);
+        ImageView volver = findViewById(R.id.volver);
 
-
-        problemaNombre = findViewById(R.id.txtNombres1);
-        problemaApellido = findViewById(R.id.txtApellidos1);
-        problemaCorreo = findViewById(R.id.txtCorreo1);
-        problemaClave = findViewById(R.id.txtPassword1);
-        problemaClaveC = findViewById(R.id.txtPasswordConfirm1);
-        problemaTelefono = findViewById(R.id.txtTel1);
-
-        volver = findViewById(R.id.volver);
         //Evento click para volver al login
         volver.setOnClickListener(v -> {
             startActivity(new Intent(RegistrarActivity.this, LoginActivity.class));
@@ -70,91 +76,100 @@ public class RegistrarActivity extends AppCompatActivity {
 
     }
 
-    //Metodo para el botón, se debe crear con un atributo tipo @View para relacionarlo con la vista
+    //Metodo para el botón de registro, se debe crear con un atributo tipo @View para relacionarlo con la vista
     public void confirmarRegistro(View view){
-        name = nombres.getText().toString();
-        lastName = apellidos.getText().toString();
-        email = correo.getText().toString().toLowerCase().trim();
-        password = passw.getText().toString().trim();
-        passwordC = confirmPass.getText().toString().trim();
-        phone = tele.getText().toString().trim();
-
         /*
-         * Si los campos están vacios mostrará error y no dejará avanzar
-         * Verificar que los campos no esten vacios
+         * Recibir valor del campo de texto
+         * Dar valor a la variable
          */
+        name = nombres.getEditText().getText().toString();
+        lastName = apellidos.getEditText().getText().toString();
+        // Y borrar espacios
+        email = correo.getEditText().getText().toString().toLowerCase().trim();
+        password = passw.getEditText().getText().toString().trim();
+        String passwordC = confirmPass.getEditText().getText().toString().trim();
+        phone = tele.getEditText().getText().toString().trim();
+
+        //Verificar si el campo esta vacio
         if (name.isEmpty() ) {
-            problemaNombre.setError("El nombre no puede estar vacio");
+            //Mostrar error
+            nombres.setError("El nombre no puede estar vacio");
         }else {
-            problemaNombre.setError(null);
+            //No mostrar el error
+            nombres.setError(null);
         }
 
         if (lastName.isEmpty()){
-            problemaApellido.setError("El apellido no puede estar vacio");
+            apellidos.setError("El apellido no puede estar vacio");
         }else {
-            problemaApellido.setError(null);
+            apellidos.setError(null);
         }
 
         if (email.isEmpty()){
-            problemaCorreo.setError("El correo no puede estar vacio o no es valido");
+            correo.setError("El correo no puede estar vacio");
         } else {
-            problemaCorreo.setError(null);
+            correo.setError(null);
         }
 
         if (password.isEmpty()){
-            problemaClave.setError("La contraseña no puede estar vacia");
+            passw.setError("La contraseña no puede estar vacia");
         } else {
-            problemaClave.setError(null);
+            passw.setError(null);
         }
 
         if (passwordC.isEmpty()){
-            problemaClaveC.setError("Este campo es obligatiorio");
+            confirmPass.setError("Este campo es obligatiorio");
         }else {
-            problemaClaveC.setError(null);
+            confirmPass.setError(null);
         }
 
         if (phone.isEmpty()){
-            problemaTelefono.setError("El teléfono no puede estar vacio");
+            tele.setError("El teléfono no puede estar vacio");
         }else {
-            problemaTelefono.setError(null);
+            tele.setError(null);
         }
 
-        //Validar que todos los campos no esten vacios
+        //Verificar que los campos no estén vacios
         if (!name.isEmpty() && !lastName.isEmpty() && !email.isEmpty() && !password.isEmpty() && !passwordC.isEmpty() && !phone.isEmpty()){
             //Validar correo
             if (Patterns.EMAIL_ADDRESS.matcher(email).matches()){
-                //Verificar que la contraseña cumpla los requisitos
+                //Verificar que la contraseña sea mayor o igual a 8 caracteres
                 if (password.length()>=8){
                     //Verificar que las contraseñas sean iguales
                     if (passwordC.equals(password)){
                         registrarUsuario();
                     }else {
-                        problemaClaveC.setError("Las contraseñas no coinciden");
+                        //Si las contraseñas no son iguales muestra error
+                        confirmPass.setError("Las contraseñas no coinciden");
                     }
                 }else {
-                    problemaClave.setError("La contraseña debe ser mayor o igual a 8 caracteres");
+                    //Si la contraseña no cumple los requisitos muestra error
+                    confirmPass.setError("La contraseña debe ser mayor o igual a 8 caracteres");
                 }
             }else {
-                problemaCorreo.setError("La dirección de correo no es valida");
+                //Si la dirección de correo es invalida muestra error
+                correo.setError("La dirección de correo no es valida");
             }
         }
     }
 
     //Metodo para registrar un nuevo usuario
     private void registrarUsuario(){
-
+        //Mensaje que queremos mostrar en el cuadro de dialogo
         pd.setMessage("Registrando usuario...");
+        //No permite dar click en otro lugar de la pantalla mientras el cuadro se muestra
         pd.setCanceledOnTouchOutside(false);
+        //Mostrar cuadro de dialogo
         pd.show();
 
-        //Función para crear usuario con correo y contraseña
+        //Crear nuevo usuario con correo y contraseña
         mAuth.createUserWithEmailAndPassword(email,password).addOnCompleteListener(task -> {
+            //Verificar que la tarea fue exitosa
             if (task.isSuccessful()){
-
                 /*
-                    *@Map para guardar los datos
-                    * El primero parametro es el nombre del campo
-                    * El segundo es la variable que tiene el valor que queremos
+                    * Objeto Map para guardar los datos
+                    * El primer parametro es el nombre del campo
+                    * El segundo es la variable que tiene el valor que queremos guardar
                  */
                 Map<String, Object>map = new HashMap<>();
                 map.put("nombres", name);
@@ -163,27 +178,43 @@ public class RegistrarActivity extends AppCompatActivity {
                 map.put("clave", password);
                 map.put("telefono", phone);
 
-                //Variable que tendrá el id del usuario
+                //Obtener el id del usuario
                 String id = Objects.requireNonNull(mAuth.getCurrentUser()).getUid();
 
                 /*
-                    *Creación de la tabla y darle el id al registro
-                    * @setValue se ingresa el nombre que le dimos a la variable tipo @Map
+                    * Definir en que colección se guardarán los datos
+                    * @param id Definir clave primaria del documento
+                    * Se ingresa el nombre que le dimos a la variable tipo Map para guardar todos los datos
                  */
                 db.collection("Usuarios").document(id).set(map).addOnCompleteListener(task1 -> {
-                    //Si los datos se registraron exitosamente se detendrá el cuadro de carga, enviara a las instrucciones
-                    //Y mostrará un @Toast
+                    //Si la tarea es exitosa enviara un correo de verificación
                     if (task1.isSuccessful()){
-                        pd.dismiss();
-                        Toast.makeText(RegistrarActivity.this, "Registro exitoso", Toast.LENGTH_SHORT).show();
-                        startActivity(new Intent(RegistrarActivity.this, MapaActivity.class));
-                        finish();
+                        //Lenguaje del mensaje
+                        mAuth.setLanguageCode("es");
+                        //Traer información del usuario registrado
+                        FirebaseUser user = mAuth.getCurrentUser();
+                        //Metodo para enviar correo
+                        user.sendEmailVerification()
+                                .addOnCompleteListener(task2 -> {
+                                    //Verificar que la tarea fue exitosa
+                                    if (task2.isSuccessful()){
+                                        //Cerrar cuadro de dialogo
+                                        pd.dismiss();
+                                        //Enviar a la activity de las instrucciones
+                                        startActivity(new Intent(RegistrarActivity.this, InstruccionesActivity.class));
+                                        //No dejar volver a la activity anterior
+                                        finish();
+                                    }else {
+                                        //Cerrar cuadro de dialogo
+                                        pd.dismiss();
+                                        //Mostrar error
+                                        Toast.makeText(this, "Error al registrarse", Toast.LENGTH_SHORT).show();
+                                    }
+                                });
                     }
                 });
             }
         });
     }
-
-
 
 }

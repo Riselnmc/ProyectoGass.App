@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!-- Xml para redondear los botones que se muestran en el mapa -->
 <shape
     android:shape="rectangle"
     xmlns:android="http://schemas.android.com/apk/res/android">
 
+    <!-- Color y redondeo del botón -->
     <corners android:radius="100dp"/>
     <solid android:color="@color/textWhite"/>
 

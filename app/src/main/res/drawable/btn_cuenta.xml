@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!-- Botón trasparente con borde verde tipo rectangulo -->
 <shape android:shape="rectangle"
     xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Grosor, color y redondeo del borde -->
     <stroke android:width="3dp"
         android:color="@color/color_verde"/>
     <corners android:radius="15dp"/>

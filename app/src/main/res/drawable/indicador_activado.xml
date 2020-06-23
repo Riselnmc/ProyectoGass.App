@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Indicador color verde, tipo rectangulo para cuando este activado -->
+<shape android:shape="rectangle"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Tamaño, redondeo y color del indicador -->
+    <size android:width="15dp" android:height="8dp" />
+    <corners android:radius="25dp"/>
+    <solid android:color="@color/color_verde"/>
+
+</shape>

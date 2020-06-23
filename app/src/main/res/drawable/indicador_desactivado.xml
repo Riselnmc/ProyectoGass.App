@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Indicador color verde, tipo ovalado para cuando este desactivado -->
+<shape android:shape="oval"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Tamaño y color del indicador -->
+    <solid android:color="@color/color_verde"/>
+    <size android:width="8dp" android:height="8dp"/>
+
+</shape>

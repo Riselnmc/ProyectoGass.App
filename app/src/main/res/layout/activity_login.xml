@@ -1,20 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!-- Contenedor principal con Scroll -->
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#fff"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".LoginActivity"
-    android:focusable="true"
-    android:focusableInTouchMode="true">
+    tools:context=".LoginActivity">
 
+        <!-- Contenedor secundario
+            widt al 100%
+            height que se adapte a la cantidad de espacio
+         -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:padding="30dp">
 
+            <!-- Imagen con logo -->
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="80dp"
@@ -22,6 +26,7 @@
                 android:contentDescription="@string/DescripcionImaen"
                 tools:ignore="VectorDrawableCompat" />
 
+            <!-- Mensaje de bienvenido -->
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -29,17 +34,22 @@
                 android:textSize="30sp"
                 android:textColor="#000"
                 android:textStyle="bold"/>
+
+            <!-- Mensaje de inicio de sesión -->
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Inicia sesión para continuar"
                 android:textSize="18sp"/>
 
+            <!-- Contenedor para los campos de texto,
+                 el recuperar contraseña y los botones -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
 
+                <!-- Contenedor para el campo de texto del correo -->
                 <com.google.android.material.textfield.TextInputLayout
                     android:id="@+id/correoE"
                     android:layout_marginTop="15dp"
@@ -49,6 +59,7 @@
                     android:nextFocusUp="@id/correoE"
                     android:nextFocusLeft="@id/correoE">
 
+                    <!-- Campo de texto del correo -->
                     <com.google.android.material.textfield.TextInputEditText
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -59,6 +70,7 @@
 
                 </com.google.android.material.textfield.TextInputLayout>
 
+                <!-- Contenedor para el campo de texto de la contraseña -->
                 <com.google.android.material.textfield.TextInputLayout
                     android:id="@+id/password"
                     android:layout_width="match_parent"
@@ -69,6 +81,7 @@
                     android:nextFocusUp="@id/password"
                     android:nextFocusLeft="@id/password">
 
+                    <!-- Campo de texto de la contraseña -->
                     <com.google.android.material.textfield.TextInputEditText
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -79,6 +92,7 @@
 
                 </com.google.android.material.textfield.TextInputLayout>
 
+                <!-- Mensaje con envio a la activity para recuperar contraseña -->
                 <TextView
                     android:id="@+id/recuperarClave"
                     android:layout_width="wrap_content"
@@ -89,6 +103,7 @@
                     android:text="@string/tv_RecuperarContraseña"
                     android:layout_gravity="end" />
 
+                <!-- Botón para iniciar sesión -->
                 <Button
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -99,6 +114,7 @@
                     android:onClick="confirmarInicio"
                     android:layout_marginTop="15dp"/>
 
+                <!-- Botón para ir a la activity de registro-->
                 <Button
                     android:id="@+id/register"
                     android:layout_width="match_parent"

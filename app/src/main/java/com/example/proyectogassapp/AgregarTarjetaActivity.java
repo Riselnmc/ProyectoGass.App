@@ -222,6 +222,7 @@ public class AgregarTarjetaActivity extends AppCompatActivity {
                 CreditCard scanResult = data.getParcelableExtra(CardIOActivity.EXTRA_SCAN_RESULT);
 
                 //Darle valor al @TextView que tendrá el número de la tarjeta escaneada
+                assert scanResult != null;
                 numberC.setText(scanResult.getRedactedCardNumber());
 
                 //Darle el nombre del titular a la variable

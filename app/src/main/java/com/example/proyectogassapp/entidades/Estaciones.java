@@ -9,19 +9,17 @@ public class Estaciones implements Serializable {
     private String TelefonoEstacion;
     private Double Latitud;
     private Double Longitud;
-    private String IdServicio;
 
     public Estaciones(){
 
     }
 
-    public Estaciones(String nombreEstacion, String direccionEstacion, String telefonoEstacion, Double latitud, Double longitud, String idServicio) {
+    public Estaciones(String nombreEstacion, String direccionEstacion, String telefonoEstacion, Double latitud, Double longitud) {
         NombreEstacion = nombreEstacion;
         DireccionEstacion = direccionEstacion;
         TelefonoEstacion = telefonoEstacion;
         Latitud = latitud;
         Longitud = longitud;
-        IdServicio = idServicio;
     }
 
     public Double getLatitud() {
@@ -63,11 +61,4 @@ public class Estaciones implements Serializable {
         TelefonoEstacion = telefonoEstacion;
     }
 
-    public String getIdServicio() {
-        return IdServicio;
-    }
-
-    public void setIdServicio(String idServicio) {
-        IdServicio = idServicio;
-    }
 }

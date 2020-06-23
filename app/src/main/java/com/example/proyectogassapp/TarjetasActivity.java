@@ -21,6 +21,7 @@ public class TarjetasActivity extends AppCompatActivity implements AdaptadorTarj
 
     RecyclerView listaTarjetas;
     TextView tvTarjeta, tvTitular,tvFechaV;
+
     AdaptadorTarjetas adaptador;
 
     FirebaseAuth mAuth;
@@ -56,7 +57,7 @@ public class TarjetasActivity extends AppCompatActivity implements AdaptadorTarj
         listaTarjetas.setLayoutManager(new LinearLayoutManager(this));
         listaTarjetas.setAdapter(adaptador);
 
-        //Referencia y metodo click para volver al mapa
+        //Metodo click para volver al mapa
         findViewById(R.id.Imgvolver).setOnClickListener(v -> {
             startActivity(new Intent(TarjetasActivity.this, MapaActivity.class));
         });

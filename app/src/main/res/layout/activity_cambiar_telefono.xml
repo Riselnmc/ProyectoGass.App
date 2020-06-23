@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".CambiarTelefonoActivity">
+
+    <LinearLayout
+        android:id="@+id/layoutToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@color/textWhite"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:elevation="1dp"
+        android:outlineProvider="bounds">
+
+        <ImageView
+            android:id="@+id/Imgvolver"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/volver"
+            android:contentDescription="@string/DescripcionImaen"/>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cambiar número de teléfono"
+            android:textSize="24sp"
+            android:textColor="#000"
+            android:textStyle="bold"/>
+
+    </ScrollView>
+
+
+
+</LinearLayout>
